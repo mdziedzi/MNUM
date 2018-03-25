@@ -16,7 +16,7 @@ function [y] = md_gauss_jordan (x)
             end
         end
     end
-%     y = x;
-    y = x(:,length(x));
+%      y = x;
+     y = x(:,length(x));
 
 end
