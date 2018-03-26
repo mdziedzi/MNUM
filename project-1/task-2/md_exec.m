@@ -12,12 +12,17 @@ function md_exec (max_time)
         C = md_blad_residuum(A,B);
         D = md_norma_residuum(C);
         E = [E ; D];
-        if max_time < toc()
+        t = toc();
+        if max_time < t
             break
         end
         n = n * 2;
     end
     N
     E
+   
     plot(N,E);
+    title('Zaleznosc bledu rozwiazania od liczby rownan');
+    xlabel('liczba rownan n');
+    ylabel('blad rozwiazania (norma residuum)');
 end
