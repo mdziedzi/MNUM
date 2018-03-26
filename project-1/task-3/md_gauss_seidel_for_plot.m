@@ -1,4 +1,4 @@
-function [y] = md_gauss_seidel (A, e)
+function [r, iter] = md_gauss_seidel (A, e)
 
     % sekcja inicjalizacyjna
     w = size(A,1);
@@ -21,7 +21,6 @@ function [y] = md_gauss_seidel (A, e)
         r = norm(r);
         iter = iter + 1;
     end
-    y = x;
-     
+   
 end
 
