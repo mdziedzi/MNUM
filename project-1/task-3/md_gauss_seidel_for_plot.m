@@ -31,18 +31,18 @@ U = zeros(w,w);
         end
     end
  
-%Stworzenie macierzy trojkatnych oraz diagonalnej
-for i = 1:w
-    for j = 1:w
-        if(i<j)
-            U(i,j) = A(i,j);
-        elseif(i>j)
-            L(i,j) = A(i,j);
-        else
-            D(i,j) = A(i,j);
-        end
-    end
-end
+% %Stworzenie macierzy trojkatnych oraz diagonalnej
+% for i = 1:w
+%     for j = 1:w
+%         if(i<j)
+%             U(i,j) = A(i,j);
+%         elseif(i>j)
+%             L(i,j) = A(i,j);
+%         else
+%             D(i,j) = A(i,j);
+%         end
+%     end
+% end
 
     
     % petla glowna
