@@ -1,0 +1,77 @@
+Wyniki do zadania numer 1 
+<<<Macierz symetryczna>>>
+
+<<<Liczba rownan 5 >>>
+<<<Macierz symetryczna bez przesuniec>>>
+Sredni czas wykonania: 0.0619796
+Srednia ilosc iteracji: 62.1333
+Ilosc zakonczonych: 30
+Srednia roznica miedzy eig(): 7.95247
+
+<<<Macierz symetryczna z przesunieciami>>>
+Sredni czas wykonania: 0.00865486
+Srednia ilosc iteracji: 7.96667
+Ilosc zakonczonych: 30
+Srednia roznica miedzy eig(): 7.48066
+
+<<<Wyniki dla funkcji eig()>>>
+Sredni czas wykonania: 3.31163e-05
+<<<Liczba rownan 10 >>>
+<<<Macierz symetryczna bez przesuniec>>>
+Sredni czas wykonania: 0.773586
+Srednia ilosc iteracji: 256.321
+Ilosc zakonczonych: 28
+Srednia roznica miedzy eig(): 17.7433
+
+<<<Macierz symetryczna z przesunieciami>>>
+Sredni czas wykonania: 0.0323579
+Srednia ilosc iteracji: 14.5333
+Ilosc zakonczonych: 30
+Srednia roznica miedzy eig(): 15.7378
+
+<<<Wyniki dla funkcji eig()>>>
+Sredni czas wykonania: 4.24306e-05
+<<<Liczba rownan 20 >>>
+<<<Macierz symetryczna bez przesuniec>>>
+Sredni czas wykonania: 9.13961
+Srednia ilosc iteracji: 865.773
+Ilosc zakonczonych: 22
+Srednia roznica miedzy eig(): 44.0736
+
+<<<Macierz symetryczna z przesunieciami>>>
+Sredni czas wykonania: 0.161214
+Srednia ilosc iteracji: 28.2333
+Ilosc zakonczonych: 30
+Srednia roznica miedzy eig(): 31.0682
+
+<<<Wyniki dla funkcji eig()>>>
+Sredni czas wykonania: 6.18299e-05
+<<<Macierz niesymetryczna>>>
+
+<<<Liczba rownan 5 >>>
+<<<Macierz niesymetryczna z przesunieciami>>>
+Sredni czas wykonania: 0.010867
+Srednia ilosc iteracji: 9.73333
+Ilosc zakonczonych: 30
+Srednia roznica miedzy eig(): 0.916182
+
+<<<Wyniki dla funkcji eig()>>>
+Sredni czas wykonania: 3.57231e-05
+<<<Liczba rownan 10 >>>
+<<<Macierz niesymetryczna z przesunieciami>>>
+Sredni czas wykonania: 0.046351
+Srednia ilosc iteracji: 20.6
+Ilosc zakonczonych: 30
+Srednia roznica miedzy eig(): 2.35018
+
+<<<Wyniki dla funkcji eig()>>>
+Sredni czas wykonania: 5.66324e-05
+<<<Liczba rownan 20 >>>
+<<<Macierz niesymetryczna z przesunieciami>>>
+Sredni czas wykonania: 0.251406
+Srednia ilosc iteracji: 44.7333
+Ilosc zakonczonych: 30
+Srednia roznica miedzy eig(): 4.95558
+
+<<<Wyniki dla funkcji eig()>>>
+Sredni czas wykonania: 0.000143798
