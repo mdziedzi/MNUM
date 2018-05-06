@@ -22,7 +22,7 @@ function [D,t,iteration,v] = eigshift (A, prec, it)
         shift = ev(2); 
       end
       K = K-eye(k)*shift; %przesuniecie macierzy
-      [Q,R] = qrgsm(K); 
+      [Q,R] = md_qr_gram_schmidt_modified(K); 
       K = R*Q+eye(k)*shift; % przeksztaucenie macierzy
       i = i+1;
       iteration = iteration +1;

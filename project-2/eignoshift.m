@@ -7,7 +7,7 @@ function [D,t,i,v] = eignoshift (A, prec, it)
   n = size(A,1); 
   i = 1; 
   while i <= it && max(max(A-diag(diag(A)))) > prec
-    [Q1,R1] = qrgsm(A);
+    [Q1,R1] = md_qr_gram_schmidt_modified(A);
     A = R1*Q1; 
     i = i + 1;
   end
