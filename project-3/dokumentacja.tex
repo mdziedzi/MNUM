@@ -97,37 +97,70 @@ Dokładność wyniku zależy jedynie od ilości iteracji dlatego metoda jest zbi
 
 
 \subsubsection{Realizacja w programie Matlab}
-\begin{lstlisting}
-%funkcja wyznaczajaca zera funkcji metoda bisekcji
-function bzeropoint = bisection(fun,l,r,iter)
-%Dane wejsciowe:	l,r - lewa i prawa sterona przedzialu poszukiwan
-%			fun - funkcja 
-%			iter - maksymalna liczba uteracji
-%Dane wyjsciowe: zerospoint - wyznaczone miejsce zerowe
-  a = l; 
-  b = r;
-  fa =feval(fun,a);     %  Wartosci poczatkowe f(a) i f(b)
+\begin{lstlisting}[caption=Implementacja metody bisekcji]
+% Funkcja wyznaczajaca punkty zerowe funkcji metoda bisekcji
+%
+% IN:
+% a0, b0 - zakres
+% fun - funkcja 
+% iter - maksymalna liczba iteracji
+%
+% OUT:
+% solution - wyznaczone miejsce zerowe
+
+function soluiton = md_bisection(fun,a0,b0,iter)
+
+  a = a0; 
+  b = b0;
+  % inicjalizacja wartosciami poczatkowymi
+  fa =feval(fun,a);     
   fb =feval(fun,b);
   for k=1:iter
-    xm = a + 0.5*(b-a);    %  Poprawne obliczenie srodka przedzialu
-    fm = feval(fun,xm);      %  f(x) w srodku przedzialu
-    fprintf('%3d %12.16f %12.16f %12.16f %12.3e\n',k,a,xm,b,fm);
+    % obliczenie srodka odcinka
+    xm = a + 0.5*(b-a);    
+    %  f(xm) 
+    fm = feval(fun,xm);      
+    fprintf('%3d    [%12.10f;%12.10f]	%12.16f     %12.3e\n',k,a,b,xm,fm);
     if(fm == 0)
         return
     end
-    if sign(fm)==sign(fa)    %  Zero lezy w przedziale [xm,b], zamiana a
+    %  Zero lezy w przedziale [xm,b], zamiana a
+    if sign(fm)==sign(fa)    
         a = xm;
         fa = fm;
-    else                     %  Zero lezy w przedziale [a,xm], zamiana b
+    %  Zero lezy w przedziale [a,xm], zamiana b
+    else                     
         b = xm;
         fb = fm;
     end
+    %dodatkowy warunek zakonczenia wykonywania
+    if(fm == 0) 
+        return
+    end
   end
-  bzeropoint = xm; 
+  soluiton = xm; 
   return
 end
+	
+
+		
 \end{lstlisting}
 
+
+\subsection{Metoda siecznych}
+Metoda siecznch jest bardzo podobna do metody bisekcji, różni się tym, iż przez krańce aktualnego przedziału prowadzimy prostą, która przecina oś rzędnych w punkcie \begin{large}
+$x_{0}$
+\end{large}. Następnie prowadzimy kolejną prostą przez punkt \begin{large}
+$f(x_{n})$ 
+\end{large} i poprzedni punkt \begin{large}
+$f(x_{n-1})$ 
+\end{large}. Warto zaznaczyć, że nie dbamy tutaj o przedział izolacji pierwiastka, ani nawet o znak iloczynu wartości na krańcach aktualnego przedziału.\\\\
+Wzór na n+1 punkt, przez który ma przejść prosta:
+\begin{large}
+$x_{n+1}=\frac{x_{n-1}f(x_{n})-x_{n}f(x_{n-1})}{f(x_{n})-f(x_{n-1})}$
+\end{large}
+
+Rząd zbieżności metody siecznych wynosi \begin{large}$\frac{1+\sqrt{5}}{2}$\end{large} zatem metoda ta jest szybsza od metody bisekcji, lecz w praktyce może okazać się niezbieżna kiedy przedział izolacji nie jest dostatecznie mały, gdyż jest ona zbieżna tylko lokalnie, a nie globalnie jak poprzednia metoda. 
 
 
 
