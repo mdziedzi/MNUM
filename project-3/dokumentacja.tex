@@ -7,12 +7,16 @@
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
 
+\usepackage{listings}
 
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \selectlanguage{polish}
+
+
+\lstset{language=Matlab} 
 
 %SetFonts
 
@@ -24,6 +28,7 @@
 
 \begin{document}
 \maketitle{}
+\tableofcontents
 \section{Zadanie I}
 \subsection{Treść zadania}
 Proszę znaleźć wszystkie zera funkcji
@@ -35,11 +40,119 @@ a) metody bisekcji\\
 b) metody siecznych\\
 c) metody Newtona\\
 
+\subsection{Wyznaczanie miejsc zerowych funkcji}
+Izolowanie pierwiastka Aby znalezc miejsce zerowe funkcji, trzeba po pierwszeznalezc przedział, w kktórym ten pierwiastek na pewno sie znajduje. Jezelimamy dwa punkty a i b, to warunkiem wystarczajacym istnienia pierwiastkajest zaleznosc:
+\begin{center}
+	$f(a)f(b)<0$
+\end{center}
+Oczywiscie tych miejsc zerowych moze byc wiecej w tym przedziale w dodatkugdy f(a)f(b)>0 to wcale nie znaczy, ze pierwiastka w tym przedziale nie ma.Warto zatem posłuzyc sie wykresem funkcji i odizolowac pierwiastki czyli okreslicprzedziały, w których miejsca zerowe sie znajduja, gdyz znakomita wiekszoscmetod iteracyjnych ich wyznaczania wymaga własnie odizolowania pierwiastka.Aby znalezc wszystkie przedziały, w którym znajduja sie pierwiastki napisałemfunkcje, która zwraca macierz przdziałów, w których znajduja sie zera funkcji.Ponizej przedstawiam implementacje wraz z komentarzem.
+\begin{lstlisting}[caption=Implementacja RootIsolation]
+% funkcja znajduje przedzialy, w ktorych znajduja 
+% sie zeram funkcji. Przyjmuje 3 argumenty:
+% fun - funkcja, w ktorej chcemy odizolowac pierwiastki
+% <a,b> - przedzial.
+% zwraca macierz przedzialow w ktorych znajduja sie 
+% pierwiastki
+function y = RootIsolation(fun,a,b)
+  isroot=false;
+  n=1;% ilosc przedzialow z pierwiastkiami 
+  d=0.5;% dlogosc poczatkowa przedzialu
+  while a+d<=b% dopoki petla nie przejdzie 
+% po calym zadanym przedziale
+    if feval(fun,a)*feval(fun,a+d)<=0
+% jesli w przedziale jest pierwiastek
+      isroot=true;
+      y(n,1)=a;
+      y(n,2)=a+d;% na pierwszej kolumnie zapisujemy 
+% punkt poczatkowy, na drugiej koncowy
+      n++;% zwiekszamy rozmiar macierzy
+      a=a+d;% zaczynamy od miejsca gdzie konczyl 
+% sie poprzeni przedzial
+      d=0.25;% d znowu na 0.05 ponizej juz bedzie 0.05
+    end
+    d*=2;
+  end
+  if isroot==false% gdy brak pierwiastkow zwroc 0
+    y=0;
+  end
+end
+
+	
+\end{lstlisting}
+
+
+
+\subsection{Metoda bisekcji}
+\subsubsection{Opis teoretyczny}
+Teoretyczny zarys metody bisekcji możemy przybliżyć poniższym algorytmem:
+\begin{enumerate}
+  \item Począwszy od przedziału startowego $[a,b]$ = $[a_{0},b_{0}]$ obliczamy środek przedziału $c_{n}$,
+  	$c_{n} = \frac{a_{n}+b_{n}}{2}$
+  i obliczamy wartość $f(x)$ w tym punkcie. 
+  \item Obliczamy iloczyny $f(a_{n})*f(c_{n})$ oraz $f(b_{n})*f(c_{n})$ i jako nowy przedział $[a_{n=1},b_{n+1}]$
+  wybieramy argumenty tego iloczynu którego wartość jest ujemna. 
+\end{enumerate} 
+Kroki te powtarzamy aż do momentu uzyskania $f(c_{n})<\delta$ gdzie $\delta$ to oczekiwana dokładność rozwiązania. W przypadku "płaskich"  funkcji warto też kontrolować długość rozpatrywanego przedziału. 
+Dokładność wyniku zależy jedynie od ilości iteracji dlatego metoda jest zbieżna liniowo z ilorazem zbieżności 0.5, co czyni ją stosunkowo wolno zbieżną w przypadku wyboru szerokiego przedziału początkowego. 
+
+
+\subsubsection{Realizacja w programie Matlab}
+\begin{lstlisting}
+%funkcja wyznaczajaca zera funkcji metoda bisekcji
+function bzeropoint = bisection(fun,l,r,iter)
+%Dane wejsciowe:	l,r - lewa i prawa sterona przedzialu poszukiwan
+%			fun - funkcja 
+%			iter - maksymalna liczba uteracji
+%Dane wyjsciowe: zerospoint - wyznaczone miejsce zerowe
+  a = l; 
+  b = r;
+  fa =feval(fun,a);     %  Wartosci poczatkowe f(a) i f(b)
+  fb =feval(fun,b);
+  for k=1:iter
+    xm = a + 0.5*(b-a);    %  Poprawne obliczenie srodka przedzialu
+    fm = feval(fun,xm);      %  f(x) w srodku przedzialu
+    fprintf('%3d %12.16f %12.16f %12.16f %12.3e\n',k,a,xm,b,fm);
+    if(fm == 0)
+        return
+    end
+    if sign(fm)==sign(fa)    %  Zero lezy w przedziale [xm,b], zamiana a
+        a = xm;
+        fa = fm;
+    else                     %  Zero lezy w przedziale [a,xm], zamiana b
+        b = xm;
+        fb = fm;
+    end
+  end
+  bzeropoint = xm; 
+  return
+end
+\end{lstlisting}
+
+
 
 
 
 
 \section{Zadanie II}
+\subsection{Treść zadania}
+Używając metody Mullera MM1, proszę znaleźć wszystkie pierwiastki rzeczywiste i zespolone wielomianu
+\begin{center}
+$f(x) = a_{4}x^4+a_{3}x^3+a_{2}x^2+a_{1}x+a_{0}$,  
+$
+\left[
+\begin{array}{ccccc}
+       a_{4} & a_{3} & a_{2} & a_{1} & a_{0}
+\end{array}
+\right]
+=
+\left[
+\begin{array}{ccccc}
+       1 & -7 & -4 & 2 & 9
+\end{array}
+\right]$
+\end{center}
+
+
 
 
 \end{document}  
