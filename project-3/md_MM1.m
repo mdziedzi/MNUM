@@ -1,11 +1,7 @@
-% implementacja algorytmu Mullera MM2
-% jako argumenty kolejno funkcja, w ktorej szukany jest 
-% pierwiastek: Funkcja w ktorej szukane jest zero 
-% 3 punkty przez ktore poczatkowo ma 
-% przejsc parabola oraz dokladnosc
+% implementacja algorytmu Mullera MM1
 % Funkcja zwraca rozwiazanie oraz
 % macierz wartosci i punktow 
-function [x,mm]= MM1(fun,x0,x1,x2,pre)
+function [x,mm]= md_MM1(fun,x0,x1,x2,pre)
   i=1;
   x=100;
   counter = 0;
