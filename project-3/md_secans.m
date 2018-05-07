@@ -2,18 +2,18 @@
 %
 % IN:
 % a0, b0 - zakres
-% fun - funkcja 
+% md_fun_1 - funkcja 
 % iter - maksymalna liczba iteracji
 %
 % OUT:
 % solution - wyznaczone miejsce zerowe
-function solution = md_secans(fun, a0, b0, iter)
+function solution = md_secans(md_fun_1, a0, b0, iter)
   a = a0;
   b = b0;
   % poczatkowa wartosc funkcji
-  fa = feval(fun,a); 
+  fa = feval(md_fun_1,a); 
   for k = 1:iter
-    fb = feval(fun,b);
+    fb = feval(md_fun_1,b);
     dx = fb * (b-a) / (fb-fa); 
     xm = b-dx; 
     if(isnan(xm))

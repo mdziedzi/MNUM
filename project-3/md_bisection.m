@@ -2,24 +2,24 @@
 %
 % IN:
 % a0, b0 - zakres
-% fun - funkcja 
+% md_fun_1 - funkcja 
 % iter - maksymalna liczba iteracji
 %
 % OUT:
 % solution - wyznaczone miejsce zerowe
 
-function soluiton = md_bisection(fun,a0,b0,iter)
+function soluiton = md_bisection(md_fun_1,a0,b0,iter)
 
   a = a0; 
   b = b0;
   % inicjalizacja wartosciami poczatkowymi
-  fa =feval(fun,a);     
-  fb =feval(fun,b);
+  fa =feval(md_fun_1,a);     
+  fb =feval(md_fun_1,b);
   for k=1:iter
     % obliczenie srodka odcinka
     xm = a + 0.5*(b-a);    
     %  f(xm) 
-    fm = feval(fun,xm);      
+    fm = feval(md_fun_1,xm);      
 %     fprintf('%3d    [%12.10f;%12.10f]	%12.16f     %12.3e\n',k,a,b,xm,fm);
     fprintf('%3d & [%12.10f;%12.10f] & %12.16f & %12.3e \\\\ \n',k,a,b,xm,fm);
     if(fm == 0)

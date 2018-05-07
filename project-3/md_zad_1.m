@@ -42,4 +42,6 @@ for k=1:2
     end
 end
 
-
+md_bisection('md_fun_1',5.2,5.3,100);
+            md_secans('md_fun_1',5.2,5.3,100);
+            md_newton('md_fun_1',7.3,100);

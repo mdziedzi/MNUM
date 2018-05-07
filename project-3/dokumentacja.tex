@@ -40,47 +40,6 @@ a) metody bisekcji\\
 b) metody siecznych\\
 c) metody Newtona\\
 
-\subsection{Wyznaczanie miejsc zerowych funkcji}
-Izolowanie pierwiastka Aby znalezc miejsce zerowe funkcji, trzeba po pierwszeznalezc przedział, w kktórym ten pierwiastek na pewno sie znajduje. Jezelimamy dwa punkty a i b, to warunkiem wystarczajacym istnienia pierwiastkajest zaleznosc:
-\begin{center}
-	$f(a)f(b)<0$
-\end{center}
-Oczywiscie tych miejsc zerowych moze byc wiecej w tym przedziale w dodatkugdy f(a)f(b)>0 to wcale nie znaczy, ze pierwiastka w tym przedziale nie ma.Warto zatem posłuzyc sie wykresem funkcji i odizolowac pierwiastki czyli okreslicprzedziały, w których miejsca zerowe sie znajduja, gdyz znakomita wiekszoscmetod iteracyjnych ich wyznaczania wymaga własnie odizolowania pierwiastka.Aby znalezc wszystkie przedziały, w którym znajduja sie pierwiastki napisałemfunkcje, która zwraca macierz przdziałów, w których znajduja sie zera funkcji.Ponizej przedstawiam implementacje wraz z komentarzem.
-\begin{lstlisting}[caption=Implementacja RootIsolation]
-% funkcja znajduje przedzialy, w ktorych znajduja 
-% sie zeram funkcji. Przyjmuje 3 argumenty:
-% fun - funkcja, w ktorej chcemy odizolowac pierwiastki
-% <a,b> - przedzial.
-% zwraca macierz przedzialow w ktorych znajduja sie 
-% pierwiastki
-function y = RootIsolation(fun,a,b)
-  isroot=false;
-  n=1;% ilosc przedzialow z pierwiastkiami 
-  d=0.5;% dlogosc poczatkowa przedzialu
-  while a+d<=b% dopoki petla nie przejdzie 
-% po calym zadanym przedziale
-    if feval(fun,a)*feval(fun,a+d)<=0
-% jesli w przedziale jest pierwiastek
-      isroot=true;
-      y(n,1)=a;
-      y(n,2)=a+d;% na pierwszej kolumnie zapisujemy 
-% punkt poczatkowy, na drugiej koncowy
-      n++;% zwiekszamy rozmiar macierzy
-      a=a+d;% zaczynamy od miejsca gdzie konczyl 
-% sie poprzeni przedzial
-      d=0.25;% d znowu na 0.05 ponizej juz bedzie 0.05
-    end
-    d*=2;
-  end
-  if isroot==false% gdy brak pierwiastkow zwroc 0
-    y=0;
-  end
-end
-
-	
-\end{lstlisting}
-
-
 
 \subsection{Metoda bisekcji}
 \subsubsection{Opis teoretyczny}
@@ -304,13 +263,7 @@ end
 
 \end{lstlisting}
 
-\begin{center}
-\begin{tabular}{ c c c }
- cell1 & cell2 & cell3 \\ 
- cell4 & cell5 & cell6 \\  
- cell7 & cell8 & cell9    
-\end{tabular}
-\end{center}
+
 
 \subsection{Rozwiązanie}
 \subsubsection{Metoda bisekcji}
@@ -362,26 +315,6 @@ end
  38 & [5.2353163129;5.2353163129] & 5.2353163129195313 &    1.823e-11 \\ 
  39 & [5.2353163129;5.2353163129] & 5.2353163129157112 &    5.382e-12 \\ 
  40 & [5.2353163129;5.2353163129] & 5.2353163129138007 &   -1.045e-12 \\ 
- 41 & [5.2353163129;5.2353163129] & 5.2353163129147564 &    2.170e-12 \\ 
- 42 & [5.2353163129;5.2353163129] & 5.2353163129142786 &    5.627e-13 \\ 
- 43 & [5.2353163129;5.2353163129] & 5.2353163129140396 &   -2.414e-13 \\ 
- 44 & [5.2353163129;5.2353163129] & 5.2353163129141596 &    1.621e-13 \\ 
- 45 & [5.2353163129;5.2353163129] & 5.2353163129140992 &   -4.130e-14 \\ 
- 46 & [5.2353163129;5.2353163129] & 5.2353163129141294 &    6.062e-14 \\ 
- 47 & [5.2353163129;5.2353163129] & 5.2353163129141143 &    9.770e-15 \\ 
- 48 & [5.2353163129;5.2353163129] & 5.2353163129141063 &   -1.732e-14 \\ 
-% 49 & [5.2353163129;5.2353163129] & 5.2353163129141098 &   -5.329e-15 \\ 
-% 50 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 51 & [5.2353163129;5.2353163129] & 5.2353163129141107 &   -2.220e-15 \\ 
-% 52 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 53 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 54 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 55 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 56 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 57 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 58 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 59 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
-% 60 & [5.2353163129;5.2353163129] & 5.2353163129141116 &    8.882e-16 \\ 
  \hline
 \end{tabular}
 \end{center}
@@ -521,6 +454,13 @@ end
    \hline
 \end{tabular}
 \end{center}
+
+\subsection{Wnioski}
+Dzięki graficznej analizie wykresu funkcji w prosty sposób możemy wyznaczyć otoczenie miejsc zerowych i zachowanie funkcji. Zauważyłem, że funkcja posiada dwa miejsca zerowe. Wyznaczyłem więc przedziały "badania" miejsc zerowych za pomocą algorytmu przedstawionego w książce prof. Piotra Tatjewskiego. \\
+ Jak wynika z otrzymanych rezultatów metoda bisekcjiw obu przypadkach potrzebowała stosunkowo duzej ilosci iteracji (około 50), aby osiagac zadana dokładnosc. Jejzaletami jest niewrazliwosc na szczególne zachowania funkcji wiec mimo słabej zbieznosci nadaje siedo wyznaczania miejsc zerowych funkcji których przebiegu nie znamy w celu zabezpieczenia przezniezbieznoscią. \\
+ Metoda siecznych potrzebowała około 8 iteracji aby dojsc do wyniku. W przypadku badanej funkcji metoda ta okazała się najlepsza. O wiele szybsza niż metoda bisekcji oraz zbieżna dla podanej funkcji. Wynika to z wiekszego współczynnika zbieżności Niestety dla innych funkcji np. gdy ieczna przetnie wykres funkcji w wiekszej ilosci miejsc niz 2 razy moze okazać się niezbieżna. \\
+ Metoda Newtona zupełnie zawiodła w moim rozwiazaniu. Rozpatrywany przedział zawierałfragment funkcji z ujemna pochodna. Metoda okazała sie rozbieżna. Teorytycznie metoda ta powinna okazać się najszybsza, ponieważ ma najwyższy współczynnik zbieżności.
+
 
 \section{Zadanie II}
 \subsection{Treść zadania}
