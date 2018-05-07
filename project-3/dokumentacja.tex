@@ -161,10 +161,99 @@ $x_{n+1}=\frac{x_{n-1}f(x_{n})-x_{n}f(x_{n-1})}{f(x_{n})-f(x_{n-1})}$
 \end{large}
 
 Rząd zbieżności metody siecznych wynosi \begin{large}$\frac{1+\sqrt{5}}{2}$\end{large} zatem metoda ta jest szybsza od metody bisekcji, lecz w praktyce może okazać się niezbieżna kiedy przedział izolacji nie jest dostatecznie mały, gdyż jest ona zbieżna tylko lokalnie, a nie globalnie jak poprzednia metoda. 
+\subsubsection{Realizacja w programie Matlab}
+\begin{lstlisting}[caption=Implementacja metody siecznych]
+% Funkcja wyznaczajaca punkty zerowe funkcji metoda siecznych
+%
+% IN:
+% a0, b0 - zakres
+% fun - funkcja 
+% iter - maksymalna liczba iteracji
+%
+% OUT:
+% solution - wyznaczone miejsce zerowe
+function solution = md_secans(fun, a0, b0, iter)
+  a = a0;
+  b = b0;
+  % poczatkowa wartosc funkcji
+  fa = feval(fun,a); 
+  for k = 1:iter
+    fb = feval(fun,b);
+    dx = fb * (b-a) / (fb-fa); 
+    xm = b-dx; 
+    if(isnan(xm))
+        return
+    end
+    a = b;
+    b = xm;
+    fa = fb;
+    solution = b;
+    fprintf('%3d	[%12.10f;%12.10f]   %12.16f     %12.3e\n',k,a,b,xm,fb);
+    %dodatkowy warunek zakonczenia wykonywania
+    if(fb == 0) 
+        return
+    end
+  end
+end
+\end{lstlisting}
+
+\subsection{Metoda Newtona}
+\subsubsection{Opis teoretyczny}
+Metoda Newtona polega na wyznaczeniu częściowego (uciętego) rozwinięcia w szereg Taylora danej funkcji, które możemy traktować jak liniowe przybliżenie funkcji według wzoru:\
+  	\begin{center}
+  	$f(x) \approx f(x_{n})+f'(x_{n})(x-x_{n})$
+	\end{center}
+Następnie wyznaczamy kolejne punkty iteracji poprzez przyrównanie do zera otrzymanej aproksymacji:\\
+\begin{center}
+$f(x_{n})+f'(x_{n})(x_{n+1}-x_{n}) = 0$
+\end{center}
+Prowadzi to do zależności iteracyjnej danej następującym wzorem:\\
+\begin{center}
+$x_{n+1} = x_{n}-\frac{f(x_{n})}{f'(x_{n})}$
+\end{center}
+Metoda Newtona jest zbieżna jedynie lokalnie, ponieważ wyznaczając styczną do wykresu w danym punkcie możemy w przypadku ujemnego znaku pochodnej dojsć do rozbieżności. Dla przypadków pochodnej większej od zera metoda jest zbieżna kwadratowo. Rząd zbieżności wynosi 2.
+
+\subsubsection{Realizacja w programie Matlab}
+\begin{lstlisting}[caption=Implementacja metody Newtona]
+
+% Funkcja wyznaczajaca punkty zerowe funkcji metoda Newtona
+%
+% IN:
+% a0 - lewa strona zakresu
+% fun - funkcja 
+% iter - maksymalna liczba iteracji
+%
+% OUT:
+% solution - wyznaczone miejsce zerowe
+function solution = md_newton(fun, a0,iter)
+  x0 = a0; 
+  for k = 1:iter
+    [fold, fpold] = feval(fun,x0); 
+    dx = fold / fpold; 
+    x0 = x0 - dx;
+    fprintf('%3d	%12.10f     %12.16f     %12.3e \n',k,dx,x0,fold);
+    if(fold == 0)
+        return
+    end
+    %dodatkowy warunek zatrzumania
+	if fold==0 
+        solution = x0;
+        break; 
+    end
+  end
+end
+
+\end{lstlisting}
 
 
+\subsection{Analiza danych wejściowych}
+W celu wyznaczenia przedziałów izolacji miejsc zerowych został wykorzystany algorytm opisany w skrypcie prof. Tatjewskiego. Wstępna analiza danych rozpoczyna się od wygenerowania wykresu funkcji w danym przedziale i na tej podstawie wyboru przedziału startowego dla algorytmu. Następnie w podanym przedziale w pętli badany jest znak iloczynu funkcji w punktach granicznych. Jeżeli jest on ujemny, oznacza to występowanie miejsca zerowego w danym przedziale. Jeżeli nie, to przedział jest rozszerzany do momentu przekroczenia przedziału danego w zadaniu. 
+Poniżej wykres funkcji z zaznaczonymi przedziałami izolacji wyznaczonymi przez algorytm. 
 
-
+\begin{figure}[h]
+%\caption{Wykres z zaznaczonymi przedziałami startowymi}
+\includegraphics[width=\textwidth]{figure1.jpg}
+\end{figure}
 
 \section{Zadanie II}
 \subsection{Treść zadania}

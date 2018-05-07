@@ -5,6 +5,6 @@ function [y, dy] = md_fun_1 (x)
   dy=zeros(1,size1);
   for i=1:size1
     y(1,i)=0.7*x(1,i)*cos(x(1,i))-log(x(1,i)+1);
-    dy(1,i)=-1/(1 + x(1,i) + 0.7 * cos(x(1,i)) - 0.7 * x * sin(x(1,i)));
+    dy(1,i)=-1/(1 + x(1,i) + 0.7 * cos(x(1,i)) - 0.7 * x(1,i) * sin(x(1,i)));
   end
 end
