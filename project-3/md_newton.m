@@ -13,7 +13,7 @@ function solution = md_newton(fun, a0,iter)
     [fold, fpold] = feval(fun,x0); 
     dx = fold / fpold; 
     x0 = x0 - dx;
-    fprintf('%3d	%12.10f     %12.16f     %12.3e \n',k,dx,x0,fold);
+    fprintf('%3d & %12.3e & %12.3e & %12.3e \\\\ \n',k,dx,x0,fold);
     if(fold == 0)
         return
     end

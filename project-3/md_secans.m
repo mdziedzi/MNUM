@@ -23,7 +23,7 @@ function solution = md_secans(fun, a0, b0, iter)
     b = xm;
     fa = fb;
     solution = b;
-    fprintf('%3d	[%12.10f;%12.10f]   %12.16f     %12.3e\n',k,a,b,xm,fb);
+    fprintf('%3d & [%12.10f;%12.10f] & %12.16f & %12.3e \\\\ \n',k,a,b,xm,fb);
     %dodatkowy warunek zakonczenia wykonywania
     if(fb == 0) 
         return

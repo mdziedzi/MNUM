@@ -24,9 +24,9 @@ for k=1:2
             a = x1;
             b = x2;
             fprintf('Wyniki dla %d miejsca zerowego w przedziale [%d,%d]\n',k,a,b);
-            bisection('md_fun_1',a,b,100);
-            secant('md_fun_1',a,b,100);
-            newton('md_fun_1',a,100);
+            md_bisection('md_fun_1',a,b,100);
+            md_secans('md_fun_1',a,b,100);
+            md_newton('md_fun_1',a,100);
             x1 = 8; 
             x2 = 9; 
             break;

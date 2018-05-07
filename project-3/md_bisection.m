@@ -20,7 +20,8 @@ function soluiton = md_bisection(fun,a0,b0,iter)
     xm = a + 0.5*(b-a);    
     %  f(xm) 
     fm = feval(fun,xm);      
-    fprintf('%3d    [%12.10f;%12.10f]	%12.16f     %12.3e\n',k,a,b,xm,fm);
+%     fprintf('%3d    [%12.10f;%12.10f]	%12.16f     %12.3e\n',k,a,b,xm,fm);
+    fprintf('%3d & [%12.10f;%12.10f] & %12.16f & %12.3e \\\\ \n',k,a,b,xm,fm);
     if(fm == 0)
         return
     end
