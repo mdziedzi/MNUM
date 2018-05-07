@@ -8,7 +8,9 @@
 function [x,mm]= MM1(fun,x0,x1,x2,pre)
   i=1;
   x=100;
+  counter = 0;
   while abs(feval(fun, x))>pre
+      counter = counter +1;
     z0=x0-x2;
     z1=x1-x2;
     c=feval(fun, x2);% Rozwiazujemy uklad rownan liniowych 
@@ -49,4 +51,5 @@ function [x,mm]= MM1(fun,x0,x1,x2,pre)
     end
     i = i +1;
   end
+  counter
 end
