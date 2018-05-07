@@ -3,7 +3,7 @@
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
 %\geometry{landscape}                		% Activate for rotated page geometry
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
-\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps? with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
 
@@ -45,28 +45,28 @@
 \maketitle{}
 \tableofcontents
 \section{Zadanie I}
-\subsection{Treść zadania}
-Proszę znaleźć wszystkie zera funkcji
+\subsection{Tresc zadania}
+Prosze znalezc wszystkie zera funkcji
 \begin{center}
 $f(x) = 0.7xcos(x)-ln(x+1)$
 \end{center}
-w przedziale $[2,11]$, używając dla każdego zera programu z implementacją:\\
+w przedziale $[2,11]$, uzywajac dla kazdego zera programu z implementacja:\\
 a) metody bisekcji\\
 b) metody siecznych\\
 c) metody Newtona\\
 
 \subsection{Metoda bisekcji}
 \subsubsection{Opis teoretyczny}
-Teoretyczny zarys metody bisekcji możemy przybliżyć poniższym algorytmem:
+Teoretyczny zarys metody bisekcji mozemy przyblizyc ponizszym algorytmem:
 \begin{enumerate}
-  \item Począwszy od przedziału startowego $[a,b]$ = $[a_{0},b_{0}]$ obliczamy środek przedziału $c_{n}$,
+  \item Poczawszy od przedzialu startowego $[a,b]$ = $[a_{0},b_{0}]$ obliczamy srodek przedzialu $c_{n}$,
   	$c_{n} = \frac{a_{n}+b_{n}}{2}$
-  i obliczamy wartość $f(x)$ w tym punkcie. 
-  \item Obliczamy iloczyny $f(a_{n})*f(c_{n})$ oraz $f(b_{n})*f(c_{n})$ i jako nowy przedział $[a_{n=1},b_{n+1}]$
-  wybieramy argumenty tego iloczynu którego wartość jest ujemna. 
+  i obliczamy wartosc $f(x)$ w tym punkcie. 
+  \item Obliczamy iloczyny $f(a_{n})*f(c_{n})$ oraz $f(b_{n})*f(c_{n})$ i jako nowy przedzial $[a_{n=1},b_{n+1}]$
+  wybieramy argumenty tego iloczynu ktorego wartosc jest ujemna. 
 \end{enumerate} 
-Kroki te powtarzamy aż do momentu uzyskania $f(c_{n})<\delta$ gdzie $\delta$ to oczekiwana dokładność rozwiązania. W przypadku "płaskich"  funkcji warto też kontrolować długość rozpatrywanego przedziału. 
-Dokładność wyniku zależy jedynie od ilości iteracji dlatego metoda jest zbieżna liniowo z ilorazem zbieżności 0.5, co czyni ją stosunkowo wolno zbieżną w przypadku wyboru szerokiego przedziału początkowego. 
+Kroki te powtarzamy az do momentu uzyskania $f(c_{n})<\delta$ gdzie $\delta$ to oczekiwana dokladnosc rozwiazania. W przypadku "plaskich"  funkcji warto tez kontrolowac dlugosc rozpatrywanego przedzialu. 
+Dokladnosc wyniku zalezy jedynie od ilosci iteracji dlatego metoda jest zbiezna liniowo z ilorazem zbieznosci 0.5, co czyni ja stosunkowo wolno zbiezna w przypadku wyboru szerokiego przedzialu poczatkowego. 
 
 
 \subsubsection{Realizacja w programie Matlab}
@@ -121,19 +121,19 @@ end
 
 
 \subsection{Metoda siecznych}
-Metoda siecznch jest bardzo podobna do metody bisekcji, różni się tym, iż przez krańce aktualnego przedziału prowadzimy prostą, która przecina oś rzędnych w punkcie \begin{large}
+Metoda siecznch jest bardzo podobna do metody bisekcji, rozni sie tym, iz przez krance aktualnego przedzialu prowadzimy prosta, ktora przecina os rzednych w punkcie \begin{large}
 $x_{0}$
-\end{large}. Następnie prowadzimy kolejną prostą przez punkt \begin{large}
+\end{large}. Nastepnie prowadzimy kolejna prosta przez punkt \begin{large}
 $f(x_{n})$ 
 \end{large} i poprzedni punkt \begin{large}
 $f(x_{n-1})$ 
-\end{large}. Warto zaznaczyć, że nie dbamy tutaj o przedział izolacji pierwiastka, ani nawet o znak iloczynu wartości na krańcach aktualnego przedziału.\\\\
-Wzór na n+1 punkt, przez który ma przejść prosta:
+\end{large}. Warto zaznaczyc, ze nie dbamy tutaj o przedzial izolacji pierwiastka, ani nawet o znak iloczynu wartosci na krancach aktualnego przedzialu.\\\\
+Wzor na n+1 punkt, przez ktory ma przejsc prosta:
 \begin{large}
 $x_{n+1}=\frac{x_{n-1}f(x_{n})-x_{n}f(x_{n-1})}{f(x_{n})-f(x_{n-1})}$
 \end{large}
 
-Rząd zbieżności metody siecznych wynosi \begin{large}$\frac{1+\sqrt{5}}{2}$\end{large} zatem metoda ta jest szybsza od metody bisekcji, lecz w praktyce może okazać się niezbieżna kiedy przedział izolacji nie jest dostatecznie mały, gdyż jest ona zbieżna tylko lokalnie, a nie globalnie jak poprzednia metoda. 
+Rzad zbieznosci metody siecznych wynosi \begin{large}$\frac{1+\sqrt{5}}{2}$\end{large} zatem metoda ta jest szybsza od metody bisekcji, lecz w praktyce moze okazac sie niezbiezna kiedy przedzial izolacji nie jest dostatecznie maly, gdyz jest ona zbiezna tylko lokalnie, a nie globalnie jak poprzednia metoda. 
 \subsubsection{Realizacja w programie Matlab}
 \begin{lstlisting}[caption=Implementacja metody siecznych]
 % Funkcja wyznaczajaca punkty zerowe funkcji metoda siecznych
@@ -172,19 +172,19 @@ end
 
 \subsection{Metoda Newtona}
 \subsubsection{Opis teoretyczny}
-Metoda Newtona polega na wyznaczeniu częściowego (uciętego) rozwinięcia w szereg Taylora danej funkcji, które możemy traktować jak liniowe przybliżenie funkcji według wzoru:\
+Metoda Newtona polega na wyznaczeniu czesciowego (ucietego) rozwiniecia w szereg Taylora danej funkcji, ktore mozemy traktowac jak liniowe przyblizenie funkcji wedlug wzoru:\
   	\begin{center}
   	$f(x) \approx f(x_{n})+f'(x_{n})(x-x_{n})$
 	\end{center}
-Następnie wyznaczamy kolejne punkty iteracji poprzez przyrównanie do zera otrzymanej aproksymacji:\\
+Nastepnie wyznaczamy kolejne punkty iteracji poprzez przyrownanie do zera otrzymanej aproksymacji:\\
 \begin{center}
 $f(x_{n})+f'(x_{n})(x_{n+1}-x_{n}) = 0$
 \end{center}
-Prowadzi to do zależności iteracyjnej danej następującym wzorem:\\
+Prowadzi to do zaleznosci iteracyjnej danej nastepujacym wzorem:\\
 \begin{center}
 $x_{n+1} = x_{n}-\frac{f(x_{n})}{f'(x_{n})}$
 \end{center}
-Metoda Newtona jest zbieżna jedynie lokalnie, ponieważ wyznaczając styczną do wykresu w danym punkcie możemy w przypadku ujemnego znaku pochodnej dojsć do rozbieżności. Dla przypadków pochodnej większej od zera metoda jest zbieżna kwadratowo. Rząd zbieżności wynosi 2.
+Metoda Newtona jest zbiezna jedynie lokalnie, poniewaz wyznaczajac styczna do wykresu w danym punkcie mozemy w przypadku ujemnego znaku pochodnej dojsc do rozbieznosci. Dla przypadkow pochodnej wiekszej od zera metoda jest zbiezna kwadratowo. Rzad zbieznosci wynosi 2.
 
 \subsubsection{Realizacja w programie Matlab}
 \begin{lstlisting}[caption=Implementacja metody Newtona]
@@ -219,17 +219,17 @@ end
 \end{lstlisting}
 
 
-\subsection{Analiza danych wejściowych}
-W celu wyznaczenia przedziałów izolacji miejsc zerowych został wykorzystany algorytm opisany w skrypcie prof. Tatjewskiego. Wstępna analiza danych rozpoczyna się od wygenerowania wykresu funkcji w danym przedziale i na tej podstawie wyboru przedziału startowego dla algorytmu. Następnie w podanym przedziale w pętli badany jest znak iloczynu funkcji w punktach granicznych. Jeżeli jest on ujemny, oznacza to występowanie miejsca zerowego w danym przedziale. Jeżeli nie, to przedział jest rozszerzany do momentu przekroczenia przedziału danego w zadaniu. 
-Poniżej wykres funkcji z zaznaczonymi przedziałami izolacji wyznaczonymi przez algorytm. 
+\subsection{Analiza danych wejsciowych}
+W celu wyznaczenia przedzialow izolacji miejsc zerowych zostal wykorzystany algorytm opisany w skrypcie prof. Tatjewskiego. Wstepna analiza danych rozpoczyna sie od wygenerowania wykresu funkcji w danym przedziale i na tej podstawie wyboru przedzialu startowego dla algorytmu. Nastepnie w podanym przedziale w petli badany jest znak iloczynu funkcji w punktach granicznych. Jezeli jest on ujemny, oznacza to wystepowanie miejsca zerowego w danym przedziale. Jezeli nie, to przedzial jest rozszerzany do momentu przekroczenia przedzialu danego w zadaniu. 
+Ponizej wykres funkcji z zaznaczonymi przedzialami izolacji wyznaczonymi przez algorytm. 
 
 \begin{figure}[h]
-%\caption{Wykres z zaznaczonymi przedziałami startowymi}
+%\caption{Wykres z zaznaczonymi przedzialami startowymi}
 \includegraphics[width=\textwidth]{figure1.jpg}
 \end{figure}
 
 \subsubsection{Realizacja w programie Matlab}
-\begin{lstlisting}[caption=Skrypt rozwiązujący zadanie nr 1]
+\begin{lstlisting}[caption=Skrypt rozwiazujacy zadanie nr 1]
 
 % zadanie nr 1
 
@@ -279,7 +279,7 @@ end
 
 
 
-\subsection{Rozwiązanie}
+\subsection{Rozwiazanie}
 \subsubsection{Metoda bisekcji}
 
 \begin{center}
@@ -287,7 +287,7 @@ end
 \hline
 \multicolumn{4}{|c|}{Pierwsze miejsce zerowe} \\
  \hline
- nr & przedzial & rozwiazanie & wartość \\
+ nr & przedzial & rozwiazanie & wartosc \\
  \hline
 1 & [4.0000000000;6.1000000000] & 5.0499999999999998 &   -6.291e-01 \\ 
   2 & [5.0500000000;6.1000000000] & 5.5749999999999993 &    1.081e+00 \\ 
@@ -338,7 +338,7 @@ end
 \hline
 \multicolumn{4}{|c|}{Drugie miejsce zerowe} \\
  \hline
- nr & przedzial & rozwiazanie & wartość \\
+ nr & przedzial & rozwiazanie & wartosc \\
  \hline
  1 & [6.9000000000;9.0000000000] & 7.9500000000000002 &   -2.725e+00 \\ 
   2 & [6.9000000000;7.9500000000] & 7.4250000000000007 &    3.067e-02 \\ 
@@ -399,7 +399,7 @@ end
 \hline
 \multicolumn{4}{|c|}{Pierwsze miejsce zerowe} \\
  \hline
- nr & przedzial & rozwiazanie & wartość \\
+ nr & przedzial & rozwiazanie & wartosc \\
  \hline
   1 & [6.1000000000;5.2721231045] & 5.2721231045481129 &    2.238e+00 \\ 
   2 & [5.2721231045;5.2238264588] & 5.2238264587735248 &    1.234e-01 \\ 
@@ -417,7 +417,7 @@ end
 \hline
 \multicolumn{4}{|c|}{Drugie miejsce zerowe} \\
  \hline
- nr & przedzial & rozwiazanie & wartość \\
+ nr & przedzial & rozwiazanie & wartosc \\
  \hline
 1 & [9.0000000000;7.2966891015] & 7.2966891015391813 &   -8.043e+00 \\ 
   2 & [7.2966891015;7.4122825051] & 7.4122825051309968 &    5.855e-01 \\ 
@@ -438,7 +438,7 @@ end
 \hline
 \multicolumn{4}{|c|}{Pierwsze miejsce zerowe} \\
  \hline
- nr & przedzial & rozwiazanie & wartość \\
+ nr & przedzial & rozwiazanie & wartosc \\
  \hline
   1 &    2.291e+01 &   -1.891e+01 &   -3.440e+00 \\ 
   2 &   -2.907e+02 &    2.718e+02 &   -1.610e+01 \\ 
@@ -455,7 +455,7 @@ end
 \hline
 \multicolumn{4}{|c|}{Drugie miejsce zerowe} \\
  \hline
- nr & przedzial & rozwiazanie & wartość \\
+ nr & przedzial & rozwiazanie & wartosc \\
  \hline
 1 & -10.6337977481 & 17.5337977481481566 &    1.873e+00 \\ 
   2 & -5.4087425453 & 22.9425402934045692 &    1.768e-01 \\ 
@@ -470,16 +470,21 @@ end
 \end{center}
 
 \subsection{Wnioski}
-Dzięki graficznej analizie wykresu funkcji w prosty sposób możemy wyznaczyć otoczenie miejsc zerowych i zachowanie funkcji. Zauważyłem, że funkcja posiada dwa miejsca zerowe. Wyznaczyłem więc przedziały "badania" miejsc zerowych za pomocą algorytmu przedstawionego w książce prof. Piotra Tatjewskiego. \\
- Jak wynika z otrzymanych rezultatów metoda bisekcjiw obu przypadkach potrzebowała stosunkowo duzej ilosci iteracji (około 50), aby osiagac zadana dokładnosc. Jejzaletami jest niewrazliwosc na szczególne zachowania funkcji wiec mimo słabej zbieznosci nadaje siedo wyznaczania miejsc zerowych funkcji których przebiegu nie znamy w celu zabezpieczenia przezniezbieznoscią. \\
- Metoda siecznych potrzebowała około 8 iteracji aby dojsc do wyniku. W przypadku badanej funkcji metoda ta okazała się najlepsza. O wiele szybsza niż metoda bisekcji oraz zbieżna dla podanej funkcji. Wynika to z wiekszego współczynnika zbieżności Niestety dla innych funkcji np. gdy ieczna przetnie wykres funkcji w wiekszej ilosci miejsc niz 2 razy moze okazać się niezbieżna. \\
- Metoda Newtona zupełnie zawiodła w moim rozwiazaniu. Rozpatrywany przedział zawierałfragment funkcji z ujemna pochodna. Metoda okazała sie rozbieżna. Teorytycznie metoda ta powinna okazać się najszybsza, ponieważ ma najwyższy współczynnik zbieżności.
+Dzieki graficznej analizie wykresu funkcji w prosty sposob mozemy wyznaczyc otoczenie miejsc zerowych i zachowanie funkcji. Zauwazylem, ze funkcja posiada dwa miejsca zerowe. Wyznaczylem wiec przedzialy "badania" miejsc zerowych za pomoca algorytmu przedstawionego w ksiazce prof. Piotra Tatjewskiego. \\
+ Jak wynika z otrzymanych rezultatow metoda bisekcji
+w obu przypadkach potrzebowala stosunkowo duzej ilosci iteracji (okolo 50), aby osiagac zadana dokladnosc. Jej
+zaletami jest niewrazliwosc na szczegolne zachowania funkcji wiec mimo slabej zbieznosci nadaje sie
+do wyznaczania miejsc zerowych funkcji ktorych przebiegu nie znamy w celu zabezpieczenia przez
+niezbieznoscia. \\
+ Metoda siecznych potrzebowala okolo 8 iteracji aby dojsc do wyniku. W przypadku badanej funkcji metoda ta okazala sie najlepsza. O wiele szybsza niz metoda bisekcji oraz zbiezna dla podanej funkcji. Wynika to z wiekszego wspolczynnika zbieznosci Niestety dla innych funkcji np. gdy ieczna przetnie wykres funkcji w wiekszej ilosci miejsc niz 2 razy moze okazac sie niezbiezna. \\
+ Metoda Newtona zupelnie zawiodla w moim rozwiazaniu. Rozpatrywany przedzial zawieral
+fragment funkcji z ujemna pochodna. Metoda okazala sie rozbiezna. Teorytycznie metoda ta powinna okazac sie najszybsza, poniewaz ma najwyzszy wspolczynnik zbieznosci.
 
 
 
 \section{Zadanie II}
-\subsection{Treść zadania}
-Używając metody Mullera MM1, proszę znaleźć wszystkie pierwiastki rzeczywiste i zespolone wielomianu
+\subsection{Tresc zadania}
+Uzywajac metody Mullera MM1, prosze znalezc wszystkie pierwiastki rzeczywiste i zespolone wielomianu
 \begin{center}
 $f(x) = a_{4}x^4+a_{3}x^3+a_{2}x^2+a_{1}x+a_{0}$,  
 $
@@ -498,9 +503,23 @@ $
 
 \subsection{Opis teorytyczny}
 
-Metoda Müllera : Powyzsze metody szukania zer funkcji jak najbardziejspełniaja swoje zadanie, lecz dzieki nim nie znajdziemy pierwiastków zespolonych.Polecana metoda do znalezienia wszystkich pierwiastków jest metodaMullera zbiezna lokalnie.MM1 Pierwsza metoda Müllera polega na aproksymacji funkcji w otoczeniurozwiazania funkcja kwadratowa. Moze byc traktowana jako uogólnieniemetody siecznych, gdyz zamiast interpolacji funkcja liniowa w dwóch punktachinterpolujemy funkcja kwadratowa w trzech.Wezmy trzy punkty x0, x1 i x2 oraz wartosci funkcji w tych punktach. Istniejedokładnie jedna funkcja kwadratowa przechodzaca przez te trzy wartoscif(x0), f(x1) i f(x2) . Metoda polega na znajdowaniu pierwiastków funkcjikwadrtatowej i potraktowaniu jednego z nich jako kolejnego przyblizonegopierwiastka wyjsciowej funkcji. Na przykład mamy dwa pierwiastki w czwartejiteracji x4.1, x4.2 to wybieramy ten, który lezy blizej poprzedniego przyblizeniai tak dalej.
+Metoda Mullera : Powyzsze metody szukania zer funkcji jak najbardziej
+spelniaja swoje zadanie, lecz dzieki nim nie znajdziemy pierwiastkow zespolonych.
+Polecana metoda do znalezienia wszystkich pierwiastkow jest metoda
+Mullera zbiezna lokalnie.
+MM1 Pierwsza metoda Mullera polega na aproksymacji funkcji w otoczeniu
+rozwiazania funkcja kwadratowa. Moze byc traktowana jako uogolnienie
+metody siecznych, gdyz zamiast interpolacji funkcja liniowa w dwoch punktach
+interpolujemy funkcja kwadratowa w trzech.
+Wezmy trzy punkty x0, x1 i x2 oraz wartosci funkcji w tych punktach. Istnieje
+dokladnie jedna funkcja kwadratowa przechodzaca przez te trzy wartosci
+f(x0), f(x1) i f(x2) . Metoda polega na znajdowaniu pierwiastkow funkcji
+kwadrtatowej i potraktowaniu jednego z nich jako kolejnego przyblizonego
+pierwiastka wyjsciowej funkcji. Na przyklad mamy dwa pierwiastki w czwartej
+iteracji x4.1, x4.2 to wybieramy ten, ktory lezy blizej poprzedniego przyblizenia
+i tak dalej.
 
-\subsection{Rozwiązanie}
+\subsection{Rozwiazanie}
 
 \begin{lstlisting}[caption=Implementacja funkcji MM1]
 
@@ -558,7 +577,7 @@ end
 
 \end{lstlisting}
 
-\begin{lstlisting}[caption=Skrypt rozwiązujący zadanie nr 2]
+\begin{lstlisting}[caption=Skrypt rozwiazujacy zadanie nr 2]
 %skrypt generujacy wyniki do zadania 2
 clear;
 x  = -10: .1 : 20;
@@ -617,9 +636,10 @@ end
 
 
 \subsection{Wnioski}
-Metoda Mullera dla wielomianu danego w zadaniu okazała się bardzo skuteczna. Dzięki aproksymacji kwadratowej metoda zawsze zbiegała do bliższego od wierzchołka paraboli zera, co uniemożliwiło pominięcie rozwiązania podczas badania kolejnych przedziałów. Jeżeli chodzi o pierwiastki zespolone spełniają one warunek wzajemnego sprzężenia. Wszystkich rozwiązań wyszło tyle ile wynosi stopień wielomianu co również jest zgodne z teorią. 
+Metoda Mullera dla wielomianu danego w zadaniu okazala sie bardzo skuteczna. Dzieki aproksymacji kwadratowej metoda zawsze zbiegala do blizszego od wierzcholka paraboli zera, co uniemozliwilo pominiecie rozwiazania podczas badania kolejnych przedzialow. Jezeli chodzi o pierwiastki zespolone spelniaja one warunek wzajemnego sprzezenia. Wszystkich rozwiazan wyszlo tyle ile wynosi stopien wielomianu co rowniez jest zgodne z teoria. 
 
 \end{document}  
+
 
 
 
