@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.5.6)  7 MAY 2018 14:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.6)  7 MAY 2018 14:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -57,9 +57,9 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 99.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
@@ -99,10 +99,6 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
  (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
@@ -113,7 +109,7 @@ Language: polish 2005/03/31 v1.2l Polish support from the babel system
 File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count99
 \U@D=\dimen117
- (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/xebabel.def (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def))
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count100
 )
 Package babel Info: Making " an active character on input line 83.
@@ -125,10 +121,6 @@ Package babel Info: Making " an active character on input line 83.
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -175,7 +167,8 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (/Users/marcin/MNUM/project-3/.texpadtmp/dokumentacja.aux)
+))
+(/Users/marcin/MNUM/project-3/.texpadtmp/dokumentacja.aux)
 \openout1 = `dokumentacja.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -186,17 +179,18 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 44.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 *geometry* driver: auto-detecting
-*geometry* detected driver: xetex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: xetex
+* driver: pdftex
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -227,9 +221,60 @@ LaTeX Font Info:    ... okay on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count101
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen122
+\scratchbox=\box28
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen123
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\c@lstlisting=\count107
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 45.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 45.
@@ -258,74 +303,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 45.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/Users/marcin/MNUM/project-3/.texpadtmp/dokumentacja.toc
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 4.
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
 )
 \tf@toc=\write3
 \openout3 = `dokumentacja.toc'.
 
-Missing character: There is no ś in font ec-lmbx12!
-Missing character: There is no ć in font ec-lmbx12!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ź in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
  [1
 
-]
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
  []
 
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
 [2]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 93.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
@@ -338,113 +328,39 @@ Overfull \hbox (62.74936pt too wide) in paragraph at lines 96--97
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ń in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ń in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 124--135
 
  []
 
 [3]
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-
 Overfull \hbox (89.02957pt too wide) in paragraph at lines 164--165
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [4]
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-
 Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-
+[5]
 Overfull \hbox (49.60925pt too wide) in paragraph at lines 207--208
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5]
-Missing character: There is no ś in font ec-lmbx12!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-File: figure1.jpg Graphic file (type bmp)
-<figure1.jpg>
-
+<figure1.jpg, id=35, 1124.2pt x 843.15pt>
+File: figure1.jpg Graphic file (type jpg)
+<use figure1.jpg>
+Package pdftex.def Info: figure1.jpg  used on input line 228.
+(pdftex.def)             Requested size: 430.00462pt x 322.49739pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
 
 Overfull \hbox (23.32904pt too wide) in paragraph at lines 246--247
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -455,123 +371,31 @@ Overfull \hbox (115.30978pt too wide) in paragraph at lines 259--260
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[7]
-Missing character: There is no ą in font ec-lmbx12!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
- [8]
+[7 <./figure1.jpg>] [8]
 Overfull \vbox (52.6957pt too high) has occurred while \output is active []
 
  [9]
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-
 Overfull \vbox (119.62296pt too high) has occurred while \output is active []
 
- [10]
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
- [11]
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ś in font ec-lmr10!
-Missing character: There is no ś in font ec-lmbx12!
-Missing character: There is no ć in font ec-lmbx12!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ź in font ec-lmr10!
-Missing character: There is no ć in font ec-lmr10!
-Missing character: There is no ̈ in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ̈ in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
- [12]
-Missing character: There is no ą in font ec-lmbx12!
- [13]
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
- [14]
+ [10] [11] [12] [13] [14]
 Overfull \hbox (115.30978pt too wide) in paragraph at lines 601--602
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ę in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
-Missing character: There is no ń in font ec-lmr10!
-Missing character: There is no ł in font ec-lmr10!
-Missing character: There is no ń in font ec-lmr10!
-Missing character: There is no ż in font ec-lmr10!
-Missing character: There is no ą in font ec-lmr10!
 [15] [16] (/Users/marcin/MNUM/project-3/.texpadtmp/dokumentacja.aux) ) 
 Here is how much of TeX's memory you used:
- 4211 strings out of 492970
- 57030 string characters out of 6133939
- 179168 words of memory out of 5000000
- 8153 multiletter control sequences out of 15000+600000
- 45178 words of font info for 44 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 26i,8n,40p,573b,1997s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 5402 strings out of 492649
+ 72904 string characters out of 6129623
+ 178451 words of memory out of 5000000
+ 9182 multiletter control sequences out of 15000+600000
+ 46239 words of font info for 45 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,8n,40p,573b,2127s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on /Users/marcin/MNUM/project-3/.texpadtmp/dokumentacja.pdf (16 pages, 304500 bytes).
+PDF statistics:
+ 130 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on /Users/marcin/MNUM/project-3/.texpadtmp/dokumentacja.pdf (16 pages).
