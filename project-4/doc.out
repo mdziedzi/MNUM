@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Zadanie 1}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Polecenie}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Og\363lny opis zagadnienia rozwiazywania uk\233adu r\363wnan r\363zniczkowych}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Metoda RK4 ze sta\233ym krokiem}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Opis algorytmu}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Kod funkcji zwracajacej punkt okreslony r\363wnaniami}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Kod funkcji zwracajacej rozwiazania metoda RK4}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{Kod programu generujacy dane wynikowe dla podpunktu 1}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.5}{Dobieranie d\233ugosci kroku}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.6}{Wnioski}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Metody wielokrokowe}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Metoda predyktor-korektor Adamsa}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Realizacja funkcji RK4 w programie Matlab}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Skrypt generujacy wykresy do zadania}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Dobieranie d\233ugosci kroku}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Wnioski}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Metoda RK4 ze zmiennym krokiem}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Opis algorytmu}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Realizacja funkcji w programie Matlab}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Funkcja generujaca rozwiazania do zadania}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.4}{Winoski}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Por\363wnanie z wynikami funkcji ode45}{}% 22
+\BOOKMARK [1][-]{section.6}{Wnioski koncowe}{}% 23
