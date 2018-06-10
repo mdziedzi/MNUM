@@ -134,47 +134,47 @@ end
 Największym wyzwaniem w powyższej metodzie jest dobranie odpowiedniej długości kroku. Moim zadaniem było dobranie go w taki sposób, aby był wystarczający do uzyskania założonej dokładności, ale nie powinien być znacznie mniejszy od wartości, przy której wymagana dokładność jest osągalna. \\
 Postanowiłem dokonać tego interaktywnie, na zasadzie prób i błędów. Posługiwałem się metodą przeszukiwania binarnego. Zainicjalizowałem zakres przeszukiwań od kroku bardzo małego do bardzo dużego, następnie wybierałem wartość środkową. W zależnośći, czy chciałem osągnąć lepszą lub gorszą aproksymację wybierałem lewą lub prawą połowę kolejnego przedziału.
 
-%
-%\subsection{Wyniki dla podpunktu 1}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,03 podpunkt:1.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,01 podpunkt:1.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:2 podpunkt:2.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,05 podpunkt:2.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,1 podpunkt:3.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,05 podpunkt:3.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:2 podpunkt:4.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,1 podpunkt:4.jpg}
-%\end{figure}
+
+\subsection{Wyniki dla podpunktu 1}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,03 podpunkt:1.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,01 podpunkt:1.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:2 podpunkt:2.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,05 podpunkt:2.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,1 podpunkt:3.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,05 podpunkt:3.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:2 podpunkt:4.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 krok:0,1 podpunkt:4.jpg}
+\end{figure}
 
 \subsection{Wnioski}
 Metoda Rungego-Kutty dla podanych równań jest szybka i stabilna numeryczie przy odpowiednim kroku. Zmniejszając krok możaby coraz dokładniej wyznaczyć trajektorię. Dobór odpowiedniej długości kroku w sposób interaktywny jest problematyczny ze względu na różnorodność kroków w zaleznosci od pountow startowych. Metoda róznież ma dość wysoki nakład obliczeniowy ponieważ jest on zależny tylko od przedziału i długości kroku, dlatego nie ma znaczenia czy równania są skomplikowane czy bardzo proste. 
