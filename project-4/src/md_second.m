@@ -12,9 +12,6 @@ for k = 1:1
     plot(data(:,1),data(:,2),'-o');
     l = size(data,1);
     hold on;
-    xl = get(gca,'xlim');
-    yl = get(gca,'ylim');
-    zl = get(gca,'zlim');
     grid on; 
     name =  ['metoda Adamsa krok:' num2str(step) ' podpunkt:' num2str(k)];
     title(name);

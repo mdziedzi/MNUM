@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.6)  10 JUN 2018 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.6)  10 JUN 2018 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -393,12 +393,12 @@ Package color Info: Driver file: pdftex.def on input line 147.
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -412,23 +412,27 @@ Package color Info: Driver file: pdftex.def on input line 147.
 (./doc.aux)
 \openout1 = `doc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for OT4+cmss on input line 32.
 
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/polski/ot4cmss.fd
+File: ot4cmss.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
@@ -480,12 +484,12 @@ e
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -496,7 +500,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 32.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -505,9 +509,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (./doc.out) (./doc.out)
 \@outlinefile=\write3
@@ -517,57 +521,62 @@ LaTeX Info: Redefining \nameref on input line 29.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for OML+plm on input line 49.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 52.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 49.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 52.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 49.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 52.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 49.
+(Font)              <14.4> on input line 52.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 49.
+(Font)              <10> on input line 52.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 49.
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+(Font)              <7> on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 49.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 52.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) (./doc.toc
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10.95> on input line 3.
 )
-\tf@toc=\write4
-\openout4 = `doc.toc'.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 56.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 56.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 56.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--58
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--58
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
@@ -575,247 +584,291 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 86.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+LaTeX Font Info:    No file OMScmss.fd. on input line 86.
 
- []
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 86.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
- [2]
+[2]
 
 LaTeX Warning: File `2d/metoda RK4 krok:0,03 podpunkt:1.jpg' not found on input
- line 141.
+ line 143.
 
-<2d/metoda RK4 krok:0,03 podpunkt:1.jpg, id=157, 887.315pt x 661.47125pt>
+<2d/metoda RK4 krok:0,03 podpunkt:1.jpg, id=151, 887.315pt x 661.47125pt>
 File: 2d/metoda RK4 krok:0,03 podpunkt:1.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,03 podpunkt:1.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,03 podpunkt:1.jpg  used on input 
-line 141.
+line 143.
 (pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
 [3]
 
 LaTeX Warning: File `2d/metoda RK4 krok:0,01 podpunkt:1.jpg' not found on input
- line 146.
+ line 148.
 
-<2d/metoda RK4 krok:0,01 podpunkt:1.jpg, id=201, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,01 podpunkt:1.jpg, id=175, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,01 podpunkt:1.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,01 podpunkt:1.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,01 podpunkt:1.jpg  used on input 
-line 146.
+line 148.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
 LaTeX Warning: File `2d/metoda RK4 krok:2 podpunkt:2.jpg' not found on input li
-ne 151.
+ne 153.
 
-<2d/metoda RK4 krok:2 podpunkt:2.jpg, id=202, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:2 podpunkt:2.jpg, id=176, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:2 podpunkt:2.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:2 podpunkt:2.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:2 podpunkt:2.jpg  used on input lin
-e 151.
+e 153.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [4 <./2d/metoda RK4 krok:0,03 podpunkt:1.jpg> <./2d/metoda RK4 krok:0,01 podpun
 kt:1.jpg>]
 
 LaTeX Warning: File `2d/metoda RK4 krok:0,05 podpunkt:2.jpg' not found on input
- line 156.
+ line 158.
 
-<2d/metoda RK4 krok:0,05 podpunkt:2.jpg, id=207, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,05 podpunkt:2.jpg, id=181, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,05 podpunkt:2.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,05 podpunkt:2.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,05 podpunkt:2.jpg  used on input 
-line 156.
+line 158.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
 LaTeX Warning: File `2d/metoda RK4 krok:0,1 podpunkt:3.jpg' not found on input 
-line 161.
+line 163.
 
-<2d/metoda RK4 krok:0,1 podpunkt:3.jpg, id=208, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,1 podpunkt:3.jpg, id=182, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,1 podpunkt:3.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,1 podpunkt:3.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,1 podpunkt:3.jpg  used on input l
-ine 161.
+ine 163.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [5 <./2d/metoda RK4 krok:2 podpunkt:2.jpg> <./2d/metoda RK4 krok:0,05 podpunkt:
 2.jpg>]
 
 LaTeX Warning: File `2d/metoda RK4 krok:0,05 podpunkt:3.jpg' not found on input
- line 166.
+ line 168.
 
-<2d/metoda RK4 krok:0,05 podpunkt:3.jpg, id=213, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,05 podpunkt:3.jpg, id=187, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,05 podpunkt:3.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,05 podpunkt:3.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,05 podpunkt:3.jpg  used on input 
-line 166.
+line 168.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
 LaTeX Warning: File `2d/metoda RK4 krok:2 podpunkt:4.jpg' not found on input li
-ne 171.
+ne 173.
 
-<2d/metoda RK4 krok:2 podpunkt:4.jpg, id=214, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:2 podpunkt:4.jpg, id=188, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:2 podpunkt:4.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:2 podpunkt:4.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:2 podpunkt:4.jpg  used on input lin
-e 171.
+e 173.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [6 <./2d/metoda RK4 krok:0,1 podpunkt:3.jpg> <./2d/metoda RK4 krok:0,05 podpunk
 t:3.jpg>]
 
 LaTeX Warning: File `2d/metoda RK4 krok:0,1 podpunkt:4.jpg' not found on input 
-line 176.
+line 178.
 
-<2d/metoda RK4 krok:0,1 podpunkt:4.jpg, id=219, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,1 podpunkt:4.jpg, id=193, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,1 podpunkt:4.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,1 podpunkt:4.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,1 podpunkt:4.jpg  used on input l
-ine 176.
+ine 178.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [7 <./2d/metoda RK4 krok:2 podpunkt:4.jpg> <./2d/metoda RK4 krok:0,1 podpunkt:4
 .jpg>] [8]
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,025 podpunkt:1.jpg' not found on i
-nput line 256.
+nput line 255.
 
-<2d/metoda Adamsa krok:0,025 podpunkt:1.jpg, id=248, 887.315pt x 661.47125pt>
+<2d/metoda Adamsa krok:0,025 podpunkt:1.jpg, id=216, 887.315pt x 661.47125pt>
 File: 2d/metoda Adamsa krok:0,025 podpunkt:1.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,025 podpunkt:1.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,025 podpunkt:1.jpg  used on in
-put line 256.
+put line 255.
 (pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,01 podpunkt:1.jpg' not found on in
-put line 260.
+put line 259.
 
-<2d/metoda Adamsa krok:0,01 podpunkt:1.jpg, id=249, 887.315pt x 661.47125pt>
+<2d/metoda Adamsa krok:0,01 podpunkt:1.jpg, id=217, 887.315pt x 661.47125pt>
 File: 2d/metoda Adamsa krok:0,01 podpunkt:1.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,01 podpunkt:1.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,01 podpunkt:1.jpg  used on inp
-ut line 260.
+ut line 259.
 (pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
 [9]
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,5 podpunkt:2.jpg' not found on inp
-ut line 265.
+ut line 264.
 
-<2d/metoda Adamsa krok:0,5 podpunkt:2.jpg, id=286, 878.28125pt x 658.46pt>
+<2d/metoda Adamsa krok:0,5 podpunkt:2.jpg, id=256, 878.28125pt x 658.46pt>
 File: 2d/metoda Adamsa krok:0,5 podpunkt:2.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,5 podpunkt:2.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,5 podpunkt:2.jpg  used on inpu
-t line 265.
+t line 264.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,1 podpunkt:2.jpg' not found on inp
-ut line 269.
+ut line 268.
 
-<2d/metoda Adamsa krok:0,1 podpunkt:2.jpg, id=287, 878.28125pt x 658.46pt>
+<2d/metoda Adamsa krok:0,1 podpunkt:2.jpg, id=257, 878.28125pt x 658.46pt>
 File: 2d/metoda Adamsa krok:0,1 podpunkt:2.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,1 podpunkt:2.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,1 podpunkt:2.jpg  used on inpu
-t line 269.
+t line 268.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [10 <./2d/metoda Adamsa krok:0,025 podpunkt:1.jpg> <./2d/metoda Adamsa krok:0,0
 1 podpunkt:1.jpg>]
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,1 podpunkt:3.jpg' not found on inp
-ut line 274.
+ut line 273.
 
-<2d/metoda Adamsa krok:0,1 podpunkt:3.jpg, id=292, 878.28125pt x 658.46pt>
+<2d/metoda Adamsa krok:0,1 podpunkt:3.jpg, id=262, 878.28125pt x 658.46pt>
 File: 2d/metoda Adamsa krok:0,1 podpunkt:3.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,1 podpunkt:3.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,1 podpunkt:3.jpg  used on inpu
-t line 274.
+t line 273.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,05 podpunkt:3.jpg' not found on in
-put line 278.
+put line 277.
 
-<2d/metoda Adamsa krok:0,05 podpunkt:3.jpg, id=293, 878.28125pt x 658.46pt>
+<2d/metoda Adamsa krok:0,05 podpunkt:3.jpg, id=263, 878.28125pt x 658.46pt>
 File: 2d/metoda Adamsa krok:0,05 podpunkt:3.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,05 podpunkt:3.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,05 podpunkt:3.jpg  used on inp
-ut line 278.
+ut line 277.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [11 <./2d/metoda Adamsa krok:0,5 podpunkt:2.jpg> <./2d/metoda Adamsa krok:0,1 p
 odpunkt:2.jpg>]
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,5 podpunkt:4.jpg' not found on inp
-ut line 282.
+ut line 281.
 
-<2d/metoda Adamsa krok:0,5 podpunkt:4.jpg, id=298, 878.28125pt x 658.46pt>
+<2d/metoda Adamsa krok:0,5 podpunkt:4.jpg, id=268, 878.28125pt x 658.46pt>
 File: 2d/metoda Adamsa krok:0,5 podpunkt:4.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,5 podpunkt:4.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,5 podpunkt:4.jpg  used on inpu
-t line 282.
+t line 281.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
 LaTeX Warning: File `2d/metoda Adamsa krok:0,1 podpunkt:4.jpg' not found on inp
-ut line 286.
+ut line 285.
 
-<2d/metoda Adamsa krok:0,1 podpunkt:4.jpg, id=299, 878.28125pt x 658.46pt>
+<2d/metoda Adamsa krok:0,1 podpunkt:4.jpg, id=269, 878.28125pt x 658.46pt>
 File: 2d/metoda Adamsa krok:0,1 podpunkt:4.jpg Graphic file (type jpg)
 <use 2d/metoda Adamsa krok:0,1 podpunkt:4.jpg>
 Package pdftex.def Info: 2d/metoda Adamsa krok:0,1 podpunkt:4.jpg  used on inpu
-t line 286.
+t line 285.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [12 <./2d/metoda Adamsa krok:0,1 podpunkt:3.jpg> <./2d/metoda Adamsa krok:0,05 
 podpunkt:3.jpg>] [13 <./2d/metoda Adamsa krok:0,5 podpunkt:4.jpg> <./2d/metoda 
 Adamsa krok:0,1 podpunkt:4.jpg>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 313.
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 312
+.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 312.
 
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 313.
- [14] [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 424.
+LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 312.
 
-[16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
+[14] [15]
+
+LaTeX Warning: File `ode/metoda ode45 podpunkt:1.jpg' not found on input line 3
+99.
+
+<ode/metoda ode45 podpunkt:1.jpg, id=360, 887.315pt x 661.47125pt>
+File: ode/metoda ode45 podpunkt:1.jpg Graphic file (type jpg)
+<use ode/metoda ode45 podpunkt:1.jpg>
+Package pdftex.def Info: ode/metoda ode45 podpunkt:1.jpg  used on input line 39
+9.
+(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+
+LaTeX Warning: File `ode/metoda ode45 podpunkt:2.jpg' not found on input line 4
+03.
+
+<ode/metoda ode45 podpunkt:2.jpg, id=361, 887.315pt x 661.47125pt>
+File: ode/metoda ode45 podpunkt:2.jpg Graphic file (type jpg)
+<use ode/metoda ode45 podpunkt:2.jpg>
+Package pdftex.def Info: ode/metoda ode45 podpunkt:2.jpg  used on input line 40
+3.
+(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+
+LaTeX Warning: File `ode/metoda ode45 podpunkt:3.jpg' not found on input line 4
+07.
+
+<ode/metoda ode45 podpunkt:3.jpg, id=362, 887.315pt x 661.47125pt>
+File: ode/metoda ode45 podpunkt:3.jpg Graphic file (type jpg)
+<use ode/metoda ode45 podpunkt:3.jpg>
+Package pdftex.def Info: ode/metoda ode45 podpunkt:3.jpg  used on input line 40
+7.
+(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+[16 <./ode/metoda ode45 podpunkt:1.jpg>]
+
+LaTeX Warning: File `ode/metoda ode45 podpunkt:4.jpg' not found on input line 4
+11.
+
+<ode/metoda ode45 podpunkt:4.jpg, id=367, 887.315pt x 661.47125pt>
+File: ode/metoda ode45 podpunkt:4.jpg Graphic file (type jpg)
+<use ode/metoda ode45 podpunkt:4.jpg>
+Package pdftex.def Info: ode/metoda ode45 podpunkt:4.jpg  used on input line 41
+1.
+(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+[17 <./ode/metoda ode45 podpunkt:2.jpg> <./ode/metoda ode45 podpunkt:3.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 418.
+
+[18 <./ode/metoda ode45 podpunkt:4.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 418.
  (./doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 424.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 418.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 418.
 Package rerunfilecheck Info: File `doc.out' has not changed.
 (rerunfilecheck)             Checksum: 3314F35D76093BF07A529F6D4BC59CFC;1857.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 424.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 418.
  ) 
 Here is how much of TeX's memory you used:
- 9262 strings out of 492649
- 133359 string characters out of 6129623
- 353859 words of memory out of 5000000
- 12801 multiletter control sequences out of 15000+600000
- 14992 words of font info for 49 fonts, out of 8000000 for 9000
+ 9282 strings out of 492649
+ 134003 string characters out of 6129623
+ 370922 words of memory out of 5000000
+ 12822 multiletter control sequences out of 15000+600000
+ 19731 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,40p,873b,1820s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,6n,40p,873b,1818s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/local/t
 exlive/2018/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/local/texlive/2018/tex
 mf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/local/texlive/2018/texmf-dist/fonts/e
 nc/dvips/pl/plms.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
+fonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/pl
-bx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plbx12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plbx8.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/pl/plmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/pl/plr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/pl/plr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plr17.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on doc.pdf (16 pages, 880015 bytes).
+bx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plbx8.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/pl/plr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/p
+l/plss12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plss17.p
+fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plssbx10.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
+Output written on doc.pdf (18 pages, 1041512 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 441 compressed objects within 5 object streams
- 212 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 205 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

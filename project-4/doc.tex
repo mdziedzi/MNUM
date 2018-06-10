@@ -1,6 +1,6 @@
 % TeX encoding = utf8
 % TeX spellcheck = pl_PL 
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper, 12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[polish]{babel}
 \usepackage{polski}
@@ -18,8 +18,11 @@
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
 
+ \renewcommand{\familydefault}{\sfdefault}
+
+
 \author{Marcin Dziedzic}
-\title{Dokumentacja projektu laboratoryjnego numer 4 przedmiot MNUM}
+\title{[MNUM] - Dokumentacja projektu  nr 4}
 \frenchspacing
 
 \newgeometry{tmargin=2cm, bmargin=2cm, lmargin=2cm, rmargin=2cm}
@@ -46,7 +49,6 @@
 }
 
 \maketitle
-\tableofcontents
 
 \section{Zadanie 1}
 \subsection{Polecenie}
@@ -237,9 +239,6 @@ for k = 1:1
     plot(data(:,1),data(:,2),'-o');
     l = size(data,1);
     hold on;
-    xl = get(gca,'xlim');
-    yl = get(gca,'ylim');
-    zl = get(gca,'zlim');
     grid on; 
     name =  ['metoda Adamsa krok:' num2str(step) ' podpunkt:' num2str(k)];
     title(name);
@@ -295,7 +294,7 @@ Jeżeli chodzi o metodę obliczeń to jest ona identyczna jak w tej ze stałym k
 
 \subsection{Realizacja funkcji w programie Matlab}
 \begin{lstlisting}
-function [Y] = rk4dynamic(x,timelimit,stp)
+function [Y] = md_rk4d(x,timelimit,stp)
 %RK4 Rozwiazanie ukladu metoda Rungego-Kutty czwartego rzedu ze zmiennym
 %krokiem
 %x - stan poczatkowy
@@ -312,21 +311,21 @@ function [Y] = rk4dynamic(x,timelimit,stp)
 
     while(time<=timelimit)
         
-        k1 = f_x(x1);
-        k2 = f_x(x1+(stp/2)*k1);
-        k3 = f_x(x1+(stp/2)*k2);
-        k4 = f_x(x1+stp*k3); 
+        k1 = md_fx(x1);
+        k2 = md_fx(x1+(stp/2)*k1);
+        k3 = md_fx(x1+(stp/2)*k2);
+        k4 = md_fx(x1+stp*k3); 
         x1=x1+(1/6)*stp*(k1+2*k2+2*k3+k4);
 
-        k1 = f_x(x2);%obliczenie wartosci z polowicznym krokeim
-        k2 = f_x(x2+(stp/4)*k1);
-        k3 = f_x(x2+(stp/4)*k2);
-        k4 = f_x(x2+(stp/2)*k3);
+        k1 = md_fx(x2);%obliczenie wartosci z polowicznym krokeim
+        k2 = md_fx(x2+(stp/4)*k1);
+        k3 = md_fx(x2+(stp/4)*k2);
+        k4 = md_fx(x2+(stp/2)*k3);
         x2=x2+(1/6)*(stp/2)*(k1+2*k2+2*k3+k4);
-        k1 = f_x(x2);
-        k2 = f_x(x2+(stp/4)*k1);
-        k3 = f_x(x2+(stp/4)*k2);
-        k4 = f_x(x2+(stp/2)*k3);
+        k1 = md_fx(x2);
+        k2 = md_fx(x2+(stp/4)*k1);
+        k3 = md_fx(x2+(stp/4)*k2);
+        k4 = md_fx(x2+(stp/2)*k3);
         x2=x2+(1/6)*(stp/2)*(k1+2*k2+2*k3+k4);  
         
         R = (x2-x1)/15;
@@ -350,25 +349,20 @@ end
 
 \subsection{Funkcja generująca rozwiązania do zadania}
 \begin{lstlisting}
-%Realizacja podpunktu 3 metoda metoda RK4 zmienny krok
+% Realizacja podpunktu 3 
+% metoda metoda RK4 zmienny krok
 clear; 
 zero=[8 7; 0 0.4; 5 0; 0.01 0.001]; %wektor krokow
 step = 0.01; %krok
 
 for k = 1:4
     
-    data = rk4dynamic(zero(k,:),20,step);
+    data = md_rk4d(zero(k,:),20,step);
     
-    h = figure('visible','off');
+    h = figure; %('visible','off')
     plot(data(:,1),data(:,2),'-o');
     l = size(data,1);
     hold on;
-    xl = get(gca,'xlim');
-    yl = get(gca,'ylim');
-    zl = get(gca,'zlim');
-    %scatter3(data(:,1),data(:,2),repmat(zl(1),l,1),'.');
-    %scatter3(data(:,1),repmat(yl(2),l,1),data(:,3),'.');
-    %scatter3(repmat(xl(2),l,1),data(:,2),data(:,3),'.');
     grid on; 
     name =  ['metoda RK4 zmienny krok podpunkt:' num2str(k)];
     title(name);
@@ -399,23 +393,23 @@ Metoda RK4 ze zmiennym krokiem znacznie wydajniej radzi sobie z obliczeniami ze 
 
 \section{Porównanie z wynikami funkcji ode45}
 Funkcja ode45 dobrała znacznie większe kroki co widać na wykresach, przez to czas obliczeń był rzędy razy mniejszy niż zaimplementowanych przeze mnie metod. Jeżeli chodzi o dokładność to wykresy wygenerowane funkcą ode45 są dużo mniej "gładkie" jednak krok jest dobierany równomiernie, i nie widać nakładjących się na siebie punktów na wykresie, co świadczy o optymalności metody. 
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:1.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:2.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:3.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:4.jpg}
-%\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:1.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:2.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:3.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:4.jpg}
+\end{figure}
 
 \section{Wnioski końcowe}
 W przypadku metod jednopunktowych stałokrokowych najlepiej wypada metoda adamsa ze względu na najniższy czas wykonania obliczeń, jednak jest ona zbierzna w wąskim przedziale kroku. Metoda RK4 ze zmiennym krokiem również bardzo dokładnie wyznacza trajektoriam jednak zdecydowanie przegrywa z metodą ode45 ze zmiennym krokiem pod względem wydajności. Przypuszczem że zastosowanie zmiennego kroku dla metody predyktor-korektor Adamsa mogło by dać najlepszy rezultat dla danych z tego zdania, ponieważ wymaga najmniejszej liczby kroków przy wysokiej dokładności. 
