@@ -177,10 +177,10 @@ Postanowiłem dokonać tego interaktywnie, na zasadzie prób i błędów. Posłu
 \end{figure}
 
 \subsection{Wnioski}
-Metoda Rungego-Kutty dla podanych równań jest szybka i stabilna numeryczie przy odpowiednim kroku. Zmniejszając krok możaby coraz dokładniej wyznaczyć trajektorię. Dobór odpowiedniej długości kroku w sposób interaktywny jest problematyczny ze względu na różnorodność kroków w zaleznosci od pountow startowych. Metoda róznież ma dość wysoki nakład obliczeniowy ponieważ jest on zależny tylko od przedziału i długości kroku, dlatego nie ma znaczenia czy równania są skomplikowane czy bardzo proste. 
+Metoda Rungego-Kutty dla podanych równań jest szybka przy odpowiednim kroku. Zmniejszając krok możaby coraz dokładniej wyznaczyć tor ruchu. Dobór odpowiedniej długości kroku w sposób interaktywny jest problematyczny ze względu na różnorodność kroków w zaleznosci od pountow startowych. Metoda róznież ma dość wysoki nakład obliczeniowy ponieważ jest on zależny tylko od przedziału i długości kroku, dlatego nie ma znaczenia czy równania są skomplikowane czy bardzo proste. 
 
 \section{Metody wielokrokowe}
-Metody wielokrokwe w odróżnieniu od iteracyjnych uzywają do wyznaczenia punktu wartości obliczonych w poprzednich krokach. Wynika z tego że przy rozpoczynaniu rozwiązywania zagadnienia metodą wielokrokową musimy wyznaczyć punkty początkowe (zazwiczaj jedną z metod iteracyjnych) a następnie na podstawie wartości początkowch obliczane są kolejne punkty. Medod tych używa się w przypadku gdy wyznaczanie wartości bezpośrednio ze wzoru jest czasochłonne, ponieważ metody wielokrokowe rzadziej wykorzystują bezpośrednie obliczanie wartości funkcji. Wyróżniamy metody jawne które wykorzystują jedynie wartości funkcji w poprzednio obliczonych punktach oraz niejawne kore dodatkowo korzystają z wartości w punkcie bierzącym. 
+Metody wielokrokwe w odróżnieniu od iteracyjnych uzywają do wyznaczenia punktu wartości obliczonych w poprzednich krokach. Wynika z tego że przy rozpoczynaniu rozwiązywania zagadnienia metodą wielokrokową musimy wyznaczyć punkty początkowe (zazwiczaj jedną z metod iteracyjnych) a następnie na podstawie wartości początkowch obliczane są kolejne punkty. Medod tych używa się w przypadku gdy wyznaczanie wartości bezpośrednio ze wzoru jest czasochłonne, ponieważ metody wielokrokowe rzadziej wykorzystują bezpośrednie obliczanie wartości funkcji. Wyróżniamy metody jawne które wykorzystują jedynie wartości funkcji w poprzednio obliczonych punktach oraz niejawne, które dodatkowo korzystają z wartości w punkcie bierzącym. 
 
 \subsection{Metoda predyktor-korektor Adamsa}
 Metoda predykcyjno-korekcyjna łączy zalety metod jawnych i niejawnych. Dzięki temu zachowuje wysoki rząd i małą stałą błędu na szerokim obszarze przy zachowaniu małej liczby iteracji. Praktyczne realizacja metody polega na obliczeniu czterech członów: P - predykcja, E - ewaluacja, K - korekcja, E - kolejna ewaluacja. Dla metody predyktor - korektor Adamsa rozwiązanie możemy przybliżyć następującymi równaniami: 
@@ -192,8 +192,8 @@ $$E:  f_{n} = f(x_{n},y_{n})$$
 
 \subsection{Realizacja funkcji RK4 w programie Matlab}
 \begin{lstlisting}
-function[Y] = pkadams(x,timelimit,stp)
-%funkcja zwracajaca wektor wyznacziony metoda PK adamsa
+function[Y] = md_pkadams(x,timelimit,stp)
+%funkcja zwracajaca wektor wyznacziony metoda PK adamsa 
 %dane wejsciowe
 %x - wektor danych 
 %timelimit - zakres czasu
@@ -203,44 +203,43 @@ function[Y] = pkadams(x,timelimit,stp)
     hstp=stp/2;
     for i = 1:3 %generowanie punktow poczatkowych
         Y(i,3) = i*stp; %generowanie czasu
-        k1 = f_x(x); %pochodna w punkcie y(xn);
-        k2 = f_x(x+hstp*k1); %pochodna w punkcie y(xn+stp/2*k1) 
-        k3 = f_x(x+hstp*k2); %pochodna w punkcie y(xn+stp/2*k2)
-        k4 = f_x(x+stp*k3); %pochodna w punkcie y(xn+stp*k3)
+        k1 = md_fx(x); %pochodna w punkcie y(xn);
+        k2 = md_fx(x+hstp*k1); %pochodna w punkcie y(xn+stp/2*k1) 
+        k3 = md_fx(x+hstp*k2); %pochodna w punkcie y(xn+stp/2*k2)
+        k4 = md_fx(x+stp*k3); %pochodna w punkcie y(xn+stp*k3)
         x=x+(1/6)*stp*(k1+2*k2+2*k3+k4); %obliczenie nastepnego punktu
         Y(i,1:2) = x; %zapisanie punktu do wektora
     end
     for i = 4:(timelimit/stp)
         Y(i,3) = i*stp; %gererowanie czasu
-        tmp = x + stp/24*(55*f_x(x) - 59*f_x(Y(i-1,1:2)) + 37*f_x(Y(i-2,1:2)) - 9*f_x(Y(i-3,1:2))); % predykcja i ewaluacja
-        x = x + stp/24*(9*f_x(tmp) + 19*f_x(x) - 5*f_x(Y(i-1,1:2)) + f_x(Y(i-2,1:2))); % korekcja i ewaluacja
+        tmp = x + stp/24*(55*md_fx(x) - 59*md_fx(Y(i-1,1:2)) + 37*md_fx(Y(i-2,1:2)) - 9*md_fx(Y(i-3,1:2))); % predykcja i ewaluacja
+        x = x + stp/24*(9*md_fx(tmp) + 19*md_fx(x) - 5*md_fx(Y(i-1,1:2)) + md_fx(Y(i-2,1:2))); % korekcja i ewaluacja
         Y(i,1:2) = x; %zapis wyniku
     end
 end
+
 \end{lstlisting}
 
 
 \subsection{Skrypt generujący wykresy do zadania}
 \begin{lstlisting}
-%Realizacja podpunktu 2 metoda metoda predyktor-korektor Adamsa 4-rzedu
+% Realizacja zadania 2 
+% metoda metoda predyktor-korektor Adamsa 4-rzedu
 clear; 
 zero=[8 7; 0 0.4; 5 0; 0.01 0.001]; %wektor stanow poczatkowych
-step = 0.5; %krok
+step = 0.01; %krok
 
-for k = 1:4
+for k = 1:1
     
-    data = rk4static(zero(k,:),20,step);
-    
-    h = figure('visible','off');
+    data = md_pkadams(zero(k,:),20,step);
+   
+    h = figure;%('visible','off');
     plot(data(:,1),data(:,2),'-o');
     l = size(data,1);
     hold on;
     xl = get(gca,'xlim');
     yl = get(gca,'ylim');
     zl = get(gca,'zlim');
-    %scatter3(data(:,1),data(:,2),repmat(zl(1),l,1),'.');
-    %scatter3(data(:,1),repmat(yl(2),l,1),data(:,3),'.');
-    %scatter3(repmat(xl(2),l,1),data(:,2),data(:,3),'.');
     grid on; 
     name =  ['metoda Adamsa krok:' num2str(step) ' podpunkt:' num2str(k)];
     title(name);
@@ -250,42 +249,42 @@ end
 
 \subsection{Dobieranie długości kroku}
 Podobnie jak w poprzednim podpunkcie, długość kroku była wprowadzana przez użytkownika w trybie interaktywnym. 
-%
-%\subsection{Wyniki}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,025 podpunkt:1.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,01 podpunkt:1.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,5 podpunkt:2.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,1 podpunkt:2.jpg}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,1 podpunkt:3.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,05 podpunkt:3.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,5 podpunkt:4.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,1 podpunkt:4.jpg}
-%\end{figure}
+
+\subsection{Wyniki}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,025 podpunkt:1.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,01 podpunkt:1.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,5 podpunkt:2.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,1 podpunkt:2.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,1 podpunkt:3.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,05 podpunkt:3.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,5 podpunkt:4.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda Adamsa krok:0,1 podpunkt:4.jpg}
+\end{figure}
 
 \subsection{Wnioski}
 Metoda predyktor-korektor Adamsa zdecydowanie dokładniej określa trajektorium niż metoda RK4 dla tego samego kroku, jednak potrzebuje znacznie mniejszego kroku do "ustabilizowania się". Różnica pomiędzy krokiem dla którego metoda jest zbieżna a krokiem dla którego jest dokłądna jest niewielka w przeciwieństwie do metody RK4. Dla dużych punktów początkowych metoda podobnie jak RK4 potrzebuje dosyć małego kroku aby uzyskać zbierzność na danym przedziale. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.6)  10 JUN 2018 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.6)  10 JUN 2018 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -595,7 +595,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 LaTeX Warning: File `2d/metoda RK4 krok:0,03 podpunkt:1.jpg' not found on input
  line 141.
 
-<2d/metoda RK4 krok:0,03 podpunkt:1.jpg, id=155, 887.315pt x 661.47125pt>
+<2d/metoda RK4 krok:0,03 podpunkt:1.jpg, id=157, 887.315pt x 661.47125pt>
 File: 2d/metoda RK4 krok:0,03 podpunkt:1.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,03 podpunkt:1.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,03 podpunkt:1.jpg  used on input 
@@ -606,7 +606,7 @@ line 141.
 LaTeX Warning: File `2d/metoda RK4 krok:0,01 podpunkt:1.jpg' not found on input
  line 146.
 
-<2d/metoda RK4 krok:0,01 podpunkt:1.jpg, id=191, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,01 podpunkt:1.jpg, id=201, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,01 podpunkt:1.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,01 podpunkt:1.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,01 podpunkt:1.jpg  used on input 
@@ -616,7 +616,7 @@ line 146.
 LaTeX Warning: File `2d/metoda RK4 krok:2 podpunkt:2.jpg' not found on input li
 ne 151.
 
-<2d/metoda RK4 krok:2 podpunkt:2.jpg, id=192, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:2 podpunkt:2.jpg, id=202, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:2 podpunkt:2.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:2 podpunkt:2.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:2 podpunkt:2.jpg  used on input lin
@@ -628,7 +628,7 @@ kt:1.jpg>]
 LaTeX Warning: File `2d/metoda RK4 krok:0,05 podpunkt:2.jpg' not found on input
  line 156.
 
-<2d/metoda RK4 krok:0,05 podpunkt:2.jpg, id=197, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,05 podpunkt:2.jpg, id=207, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,05 podpunkt:2.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,05 podpunkt:2.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,05 podpunkt:2.jpg  used on input 
@@ -638,7 +638,7 @@ line 156.
 LaTeX Warning: File `2d/metoda RK4 krok:0,1 podpunkt:3.jpg' not found on input 
 line 161.
 
-<2d/metoda RK4 krok:0,1 podpunkt:3.jpg, id=198, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,1 podpunkt:3.jpg, id=208, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,1 podpunkt:3.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,1 podpunkt:3.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,1 podpunkt:3.jpg  used on input l
@@ -650,7 +650,7 @@ ine 161.
 LaTeX Warning: File `2d/metoda RK4 krok:0,05 podpunkt:3.jpg' not found on input
  line 166.
 
-<2d/metoda RK4 krok:0,05 podpunkt:3.jpg, id=203, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,05 podpunkt:3.jpg, id=213, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,05 podpunkt:3.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,05 podpunkt:3.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,05 podpunkt:3.jpg  used on input 
@@ -660,7 +660,7 @@ line 166.
 LaTeX Warning: File `2d/metoda RK4 krok:2 podpunkt:4.jpg' not found on input li
 ne 171.
 
-<2d/metoda RK4 krok:2 podpunkt:4.jpg, id=204, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:2 podpunkt:4.jpg, id=214, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:2 podpunkt:4.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:2 podpunkt:4.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:2 podpunkt:4.jpg  used on input lin
@@ -672,45 +672,127 @@ t:3.jpg>]
 LaTeX Warning: File `2d/metoda RK4 krok:0,1 podpunkt:4.jpg' not found on input 
 line 176.
 
-<2d/metoda RK4 krok:0,1 podpunkt:4.jpg, id=209, 878.28125pt x 658.46pt>
+<2d/metoda RK4 krok:0,1 podpunkt:4.jpg, id=219, 878.28125pt x 658.46pt>
 File: 2d/metoda RK4 krok:0,1 podpunkt:4.jpg Graphic file (type jpg)
 <use 2d/metoda RK4 krok:0,1 podpunkt:4.jpg>
 Package pdftex.def Info: 2d/metoda RK4 krok:0,1 podpunkt:4.jpg  used on input l
 ine 176.
 (pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 [7 <./2d/metoda RK4 krok:2 podpunkt:4.jpg> <./2d/metoda RK4 krok:0,1 podpunkt:4
-.jpg>] [8] [9]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 314.
+.jpg>] [8]
 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
+LaTeX Warning: File `2d/metoda Adamsa krok:0,025 podpunkt:1.jpg' not found on i
+nput line 256.
+
+<2d/metoda Adamsa krok:0,025 podpunkt:1.jpg, id=248, 887.315pt x 661.47125pt>
+File: 2d/metoda Adamsa krok:0,025 podpunkt:1.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,025 podpunkt:1.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,025 podpunkt:1.jpg  used on in
+put line 256.
+(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+
+LaTeX Warning: File `2d/metoda Adamsa krok:0,01 podpunkt:1.jpg' not found on in
+put line 260.
+
+<2d/metoda Adamsa krok:0,01 podpunkt:1.jpg, id=249, 887.315pt x 661.47125pt>
+File: 2d/metoda Adamsa krok:0,01 podpunkt:1.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,01 podpunkt:1.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,01 podpunkt:1.jpg  used on inp
+ut line 260.
+(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+[9]
+
+LaTeX Warning: File `2d/metoda Adamsa krok:0,5 podpunkt:2.jpg' not found on inp
+ut line 265.
+
+<2d/metoda Adamsa krok:0,5 podpunkt:2.jpg, id=286, 878.28125pt x 658.46pt>
+File: 2d/metoda Adamsa krok:0,5 podpunkt:2.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,5 podpunkt:2.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,5 podpunkt:2.jpg  used on inpu
+t line 265.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+
+LaTeX Warning: File `2d/metoda Adamsa krok:0,1 podpunkt:2.jpg' not found on inp
+ut line 269.
+
+<2d/metoda Adamsa krok:0,1 podpunkt:2.jpg, id=287, 878.28125pt x 658.46pt>
+File: 2d/metoda Adamsa krok:0,1 podpunkt:2.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,1 podpunkt:2.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,1 podpunkt:2.jpg  used on inpu
+t line 269.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+[10 <./2d/metoda Adamsa krok:0,025 podpunkt:1.jpg> <./2d/metoda Adamsa krok:0,0
+1 podpunkt:1.jpg>]
+
+LaTeX Warning: File `2d/metoda Adamsa krok:0,1 podpunkt:3.jpg' not found on inp
+ut line 274.
+
+<2d/metoda Adamsa krok:0,1 podpunkt:3.jpg, id=292, 878.28125pt x 658.46pt>
+File: 2d/metoda Adamsa krok:0,1 podpunkt:3.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,1 podpunkt:3.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,1 podpunkt:3.jpg  used on inpu
+t line 274.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+
+LaTeX Warning: File `2d/metoda Adamsa krok:0,05 podpunkt:3.jpg' not found on in
+put line 278.
+
+<2d/metoda Adamsa krok:0,05 podpunkt:3.jpg, id=293, 878.28125pt x 658.46pt>
+File: 2d/metoda Adamsa krok:0,05 podpunkt:3.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,05 podpunkt:3.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,05 podpunkt:3.jpg  used on inp
+ut line 278.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+[11 <./2d/metoda Adamsa krok:0,5 podpunkt:2.jpg> <./2d/metoda Adamsa krok:0,1 p
+odpunkt:2.jpg>]
+
+LaTeX Warning: File `2d/metoda Adamsa krok:0,5 podpunkt:4.jpg' not found on inp
+ut line 282.
+
+<2d/metoda Adamsa krok:0,5 podpunkt:4.jpg, id=298, 878.28125pt x 658.46pt>
+File: 2d/metoda Adamsa krok:0,5 podpunkt:4.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,5 podpunkt:4.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,5 podpunkt:4.jpg  used on inpu
+t line 282.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+
+LaTeX Warning: File `2d/metoda Adamsa krok:0,1 podpunkt:4.jpg' not found on inp
+ut line 286.
+
+<2d/metoda Adamsa krok:0,1 podpunkt:4.jpg, id=299, 878.28125pt x 658.46pt>
+File: 2d/metoda Adamsa krok:0,1 podpunkt:4.jpg Graphic file (type jpg)
+<use 2d/metoda Adamsa krok:0,1 podpunkt:4.jpg>
+Package pdftex.def Info: 2d/metoda Adamsa krok:0,1 podpunkt:4.jpg  used on inpu
+t line 286.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+[12 <./2d/metoda Adamsa krok:0,1 podpunkt:3.jpg> <./2d/metoda Adamsa krok:0,05 
+podpunkt:3.jpg>] [13 <./2d/metoda Adamsa krok:0,5 podpunkt:4.jpg> <./2d/metoda 
+Adamsa krok:0,1 podpunkt:4.jpg>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 313.
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 314.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 313.
+ [14] [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 424.
 
-[10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+[16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
  (./doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
-
-
-Package rerunfilecheck Warning: File `doc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `doc.out':
-(rerunfilecheck)             Before: 79421BF3B17E44407E13F677476C9CE4;1729
-(rerunfilecheck)             After:  19EE519D749B9A5760981C6CF61B644C;1801.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 424.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
+Package rerunfilecheck Info: File `doc.out' has not changed.
+(rerunfilecheck)             Checksum: 3314F35D76093BF07A529F6D4BC59CFC;1857.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 424.
  ) 
 Here is how much of TeX's memory you used:
- 9227 strings out of 492649
- 131857 string characters out of 6129623
- 363859 words of memory out of 5000000
- 12769 multiletter control sequences out of 15000+600000
+ 9262 strings out of 492649
+ 133359 string characters out of 6129623
+ 353859 words of memory out of 5000000
+ 12801 multiletter control sequences out of 15000+600000
  14992 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,40p,873b,1820s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -730,10 +812,10 @@ ype1/public/pl/plr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on doc.pdf (12 pages, 493444 bytes).
+Output written on doc.pdf (16 pages, 880015 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 209 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 212 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
