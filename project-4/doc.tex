@@ -286,7 +286,7 @@ Podobnie jak w poprzednim podpunkcie, długość kroku była wprowadzana przez u
 \end{figure}
 
 \subsection{Wnioski}
-Metoda predyktor-korektor Adamsa zdecydowanie dokładniej określa trajektorium niż metoda RK4 dla tego samego kroku, jednak potrzebuje znacznie mniejszego kroku do "ustabilizowania się". Różnica pomiędzy krokiem dla którego metoda jest zbieżna a krokiem dla którego jest dokłądna jest niewielka w przeciwieństwie do metody RK4. Dla dużych punktów początkowych metoda podobnie jak RK4 potrzebuje dosyć małego kroku aby uzyskać zbierzność na danym przedziale. 
+Metoda predyktor-korektor Adamsa zdaje się być bardziej dokadna, jeśli porównamy ją do poprzedniej metody przy tym samym kroku. Zaobserwowałem, że dla większyk kroków metoda ma problemy z ustabilizowaniem się. Co więcej, inaczej niż w poprzedniej metodzie, różnica między długością kroku dla którego metoda predyktor-korektor Adamsa jest dokładna a zbieżna jest bardzo mała. Metoda podobnie jak RK4 słabo sprawdza się dla dżych punktów początkowych, musiałem dobrać stosunkowo krótki krok aby uzyskać zbierzność w podanym przedziale
 
 \section{Metoda RK4 ze zmiennym krokiem}
 \subsection{Opis algorytmu}
@@ -369,50 +369,32 @@ for k = 1:4
     saveas(h,name,'jpg'); 
 end
 \end{lstlisting}
-%
-%\subsection{Wyniki}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:1.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:2.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:3.jpg}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:4.jpg}
-%\end{figure}
+
+\subsection{Wyniki}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:1.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:2.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:3.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width = 15cm]{2d/metoda RK4 zmienny krok podpunkt:4.jpg}
+\end{figure}
 
 \subsection{Winoski}
-Metoda RK4 ze zmiennym krokiem znacznie wydajniej radzi sobie z obliczeniami ze względu na istotne zmniejszenie liczby kroków na gładkich odcinkach funkcji. Zaimplementowana prze ze mnie megoda doboru długości kroku nie nalezy jednak do wyrafinowanych. Przez co wzrost wydajności nie jest szczególnie mocno zauważalny. 
-
-\section{Porównanie z wynikami funkcji ode45}
-Funkcja ode45 dobrała znacznie większe kroki co widać na wykresach, przez to czas obliczeń był rzędy razy mniejszy niż zaimplementowanych przeze mnie metod. Jeżeli chodzi o dokładność to wykresy wygenerowane funkcą ode45 są dużo mniej "gładkie" jednak krok jest dobierany równomiernie, i nie widać nakładjących się na siebie punktów na wykresie, co świadczy o optymalności metody. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:1.jpg}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:2.jpg}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:3.jpg}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width = 15cm]{ode/metoda ode45 podpunkt:4.jpg}
-\end{figure}
+Metoda RK4 ze zmiennym krokiem znacznie wydajniej radzi sobie z obliczeniami ze względu na istotne zmniejszenie liczby kroków na gładkich odcinkach funkcji. 
 
 \section{Wnioski końcowe}
-W przypadku metod jednopunktowych stałokrokowych najlepiej wypada metoda adamsa ze względu na najniższy czas wykonania obliczeń, jednak jest ona zbierzna w wąskim przedziale kroku. Metoda RK4 ze zmiennym krokiem również bardzo dokładnie wyznacza trajektoriam jednak zdecydowanie przegrywa z metodą ode45 ze zmiennym krokiem pod względem wydajności. Przypuszczem że zastosowanie zmiennego kroku dla metody predyktor-korektor Adamsa mogło by dać najlepszy rezultat dla danych z tego zdania, ponieważ wymaga najmniejszej liczby kroków przy wysokiej dokładności. 
+W przypadku metod jednopunktowych stałokrokowych najlepiej wypada metoda Adamsa ze względu na najniższy czas wykonania obliczeń. Ma jednak również sowoje wady - jest  zbierzna w wąskim przedziale kroku. \\
+Metoda RK4 ze zmiennym krokiem również bardzo dokładnie wyznacza trajektorie. Jednak wymaga większego nakładu obliczeniowego.\\
+Metoda RK4 ze stałym krokeim jest szybka przy odpowiednio dużym korku, ponieważ zachowuje swoją zbierzność dla stosunkowo dużych kroków.
 
 
 \end{document}

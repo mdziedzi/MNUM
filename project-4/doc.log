@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.6)  11 JUN 2018 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.6)  11 JUN 2018 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,69 +783,70 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
 (Font)              for symbol `textless' on input line 312.
 
-[14] [15]
+[14]
 
-LaTeX Warning: File `ode/metoda ode45 podpunkt:1.jpg' not found on input line 3
-99.
+LaTeX Warning: File `2d/metoda RK4 zmienny krok podpunkt:1.jpg' not found on in
+put line 376.
 
-<ode/metoda ode45 podpunkt:1.jpg, id=360, 887.315pt x 661.47125pt>
-File: ode/metoda ode45 podpunkt:1.jpg Graphic file (type jpg)
-<use ode/metoda ode45 podpunkt:1.jpg>
-Package pdftex.def Info: ode/metoda ode45 podpunkt:1.jpg  used on input line 39
-9.
-(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+<2d/metoda RK4 zmienny krok podpunkt:1.jpg, id=310, 878.28125pt x 658.46pt>
+File: 2d/metoda RK4 zmienny krok podpunkt:1.jpg Graphic file (type jpg)
+<use 2d/metoda RK4 zmienny krok podpunkt:1.jpg>
+Package pdftex.def Info: 2d/metoda RK4 zmienny krok podpunkt:1.jpg  used on inp
+ut line 376.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
-LaTeX Warning: File `ode/metoda ode45 podpunkt:2.jpg' not found on input line 4
-03.
+LaTeX Warning: File `2d/metoda RK4 zmienny krok podpunkt:2.jpg' not found on in
+put line 380.
 
-<ode/metoda ode45 podpunkt:2.jpg, id=361, 887.315pt x 661.47125pt>
-File: ode/metoda ode45 podpunkt:2.jpg Graphic file (type jpg)
-<use ode/metoda ode45 podpunkt:2.jpg>
-Package pdftex.def Info: ode/metoda ode45 podpunkt:2.jpg  used on input line 40
-3.
-(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
+<2d/metoda RK4 zmienny krok podpunkt:2.jpg, id=311, 878.28125pt x 658.46pt>
+File: 2d/metoda RK4 zmienny krok podpunkt:2.jpg Graphic file (type jpg)
+<use 2d/metoda RK4 zmienny krok podpunkt:2.jpg>
+Package pdftex.def Info: 2d/metoda RK4 zmienny krok podpunkt:2.jpg  used on inp
+ut line 380.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+[15]
 
-LaTeX Warning: File `ode/metoda ode45 podpunkt:3.jpg' not found on input line 4
-07.
+LaTeX Warning: File `2d/metoda RK4 zmienny krok podpunkt:3.jpg' not found on in
+put line 384.
 
-<ode/metoda ode45 podpunkt:3.jpg, id=362, 887.315pt x 661.47125pt>
-File: ode/metoda ode45 podpunkt:3.jpg Graphic file (type jpg)
-<use ode/metoda ode45 podpunkt:3.jpg>
-Package pdftex.def Info: ode/metoda ode45 podpunkt:3.jpg  used on input line 40
-7.
-(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
-[16 <./ode/metoda ode45 podpunkt:1.jpg>]
+<2d/metoda RK4 zmienny krok podpunkt:3.jpg, id=362, 878.28125pt x 658.46pt>
+File: 2d/metoda RK4 zmienny krok podpunkt:3.jpg Graphic file (type jpg)
+<use 2d/metoda RK4 zmienny krok podpunkt:3.jpg>
+Package pdftex.def Info: 2d/metoda RK4 zmienny krok podpunkt:3.jpg  used on inp
+ut line 384.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
 
-LaTeX Warning: File `ode/metoda ode45 podpunkt:4.jpg' not found on input line 4
-11.
+LaTeX Warning: File `2d/metoda RK4 zmienny krok podpunkt:4.jpg' not found on in
+put line 388.
 
-<ode/metoda ode45 podpunkt:4.jpg, id=367, 887.315pt x 661.47125pt>
-File: ode/metoda ode45 podpunkt:4.jpg Graphic file (type jpg)
-<use ode/metoda ode45 podpunkt:4.jpg>
-Package pdftex.def Info: ode/metoda ode45 podpunkt:4.jpg  used on input line 41
-1.
-(pdftex.def)             Requested size: 426.79134pt x 318.15865pt.
-[17 <./ode/metoda ode45 podpunkt:2.jpg> <./ode/metoda ode45 podpunkt:3.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 418.
-
-[18 <./ode/metoda ode45 podpunkt:4.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 418.
+<2d/metoda RK4 zmienny krok podpunkt:4.jpg, id=363, 878.28125pt x 658.46pt>
+File: 2d/metoda RK4 zmienny krok podpunkt:4.jpg Graphic file (type jpg)
+<use 2d/metoda RK4 zmienny krok podpunkt:4.jpg>
+Package pdftex.def Info: 2d/metoda RK4 zmienny krok podpunkt:4.jpg  used on inp
+ut line 388.
+(pdftex.def)             Requested size: 426.79134pt x 319.97565pt.
+[16 <./2d/metoda RK4 zmienny krok podpunkt:1.jpg> <./2d/metoda RK4 zmienny krok
+ podpunkt:2.jpg>] [17 <./2d/metoda RK4 zmienny krok podpunkt:3.jpg> <./2d/metod
+a RK4 zmienny krok podpunkt:4.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
  (./doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 418.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 418.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `doc.out' has not changed.
-(rerunfilecheck)             Checksum: 3314F35D76093BF07A529F6D4BC59CFC;1857.
+(rerunfilecheck)             Checksum: EBEDFA8B97A5F7CCB57701415B170D87;1839.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 418.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
  ) 
 Here is how much of TeX's memory you used:
- 9282 strings out of 492649
- 134003 string characters out of 6129623
+ 9272 strings out of 492649
+ 134051 string characters out of 6129623
  370922 words of memory out of 5000000
- 12822 multiletter control sequences out of 15000+600000
+ 12813 multiletter control sequences out of 15000+600000
  19731 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,40p,873b,1818s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -865,7 +866,7 @@ l/plss12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plss17.p
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plssbx10.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on doc.pdf (18 pages, 1041512 bytes).
+Output written on doc.pdf (18 pages, 1067961 bytes).
 PDF statistics:
  471 PDF objects out of 1000 (max. 8388607)
  412 compressed objects within 5 object streams
